@@ -1,0 +1,23 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Ganju\Desktop\mobile-blank\blank\plugins\here_sdk\android\src\main\AndroidManifest.xml:1:1-6:12
+INJECTED from C:\Users\Ganju\Desktop\mobile-blank\blank\plugins\here_sdk\android\src\main\AndroidManifest.xml:1:1-6:12
+INJECTED from C:\Users\Ganju\Desktop\mobile-blank\blank\plugins\here_sdk\android\src\main\AndroidManifest.xml:1:1-6:12
+	package
+		ADDED from C:\Users\Ganju\Desktop\mobile-blank\blank\plugins\here_sdk\android\src\main\AndroidManifest.xml:2:3-30
+		INJECTED from C:\Users\Ganju\Desktop\mobile-blank\blank\plugins\here_sdk\android\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Ganju\Desktop\mobile-blank\blank\plugins\here_sdk\android\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Ganju\Desktop\mobile-blank\blank\plugins\here_sdk\android\src\main\AndroidManifest.xml:1:11-69
+uses-feature#0x00020000
+ADDED from C:\Users\Ganju\Desktop\mobile-blank\blank\plugins\here_sdk\android\src\main\AndroidManifest.xml:4:5-54
+	android:glEsVersion
+		ADDED from C:\Users\Ganju\Desktop\mobile-blank\blank\plugins\here_sdk\android\src\main\AndroidManifest.xml:4:19-51
+uses-sdk
+INJECTED from C:\Users\Ganju\Desktop\mobile-blank\blank\plugins\here_sdk\android\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Ganju\Desktop\mobile-blank\blank\plugins\here_sdk\android\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Ganju\Desktop\mobile-blank\blank\plugins\here_sdk\android\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Ganju\Desktop\mobile-blank\blank\plugins\here_sdk\android\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Ganju\Desktop\mobile-blank\blank\plugins\here_sdk\android\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Ganju\Desktop\mobile-blank\blank\plugins\here_sdk\android\src\main\AndroidManifest.xml

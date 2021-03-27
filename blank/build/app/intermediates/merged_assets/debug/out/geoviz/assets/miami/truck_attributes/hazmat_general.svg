@@ -1,0 +1,20 @@
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="hazmat_general">
+<rect width="28" height="28" fill="white" fill-opacity="0.01"/>
+<g id="non-stretchable_items">
+<g id="truck-icon_base01">
+<circle id="outer-ring" cx="14" cy="14" r="13" fill="#B61819"/>
+<circle id="inner-ring" cx="14" cy="14" r="10" fill="white"/>
+</g>
+<path id="path3776 2" d="M9 18H19V7.776C19 7.483 18.547 7 18.178 7L9.821 7.008C9.44 7.008 9.008 7.446 9.008 7.747L9 18Z" fill="black"/>
+<path id="path3810 2" d="M10 8V17H18V8H10Z" fill="#FF6600"/>
+<path id="path3778 2" d="M8 17V18H20V17H8Z" fill="black"/>
+<path id="Vector" d="M14 22C14.5523 22 15 21.3284 15 20.5C15 19.6716 14.5523 19 14 19C13.4477 19 13 19.6716 13 20.5C13 21.3284 13.4477 22 14 22Z" fill="black"/>
+<path id="Vector_2" d="M10 19H9V22H10V19Z" fill="black"/>
+<path id="Vector_3" d="M12 19H11V22H12V19Z" fill="black"/>
+<path id="Vector_4" d="M19 19H18V22H19V19Z" fill="black"/>
+<path id="Vector_5" d="M17 19H16V22H17V19Z" fill="black"/>
+<path id="Vector_6" d="M18 20H10V21H18V20Z" fill="black"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,42 @@
+{
+    "styles": [
+        {
+            "styleSet": "northpole",
+            "technique": "polygon",
+            "attr": {
+                "disable-shading": ["ref", "Polygon.Water.Disable.Shading"],
+                "ambient": ["ref", "Polygon.Ambient.Factor"],
+                "color": ["ref", "Northpole.Color"],
+                "diffuse": ["ref", "Polygon.Diffuse.Factor"]
+            }
+        },
+        {
+            "styleSet": "northpole/DISABLED",
+            "description": "Soft depth is disabled until further notice",
+            "technique": "polygon",
+            "category": "offscreen-depth",
+            "attr": {
+                "enforce-ztest": true
+            }
+        },
+        {
+            "styleSet": "southpole",
+            "technique": "polygon",
+            "attr": {
+                "disable-shading": ["ref", "Polygon.Land.Disable.Shading"],
+                "ambient": ["ref", "Polygon.Ambient.Factor"],
+                "color": ["ref", "Southpole.Color"],
+                "diffuse": ["ref", "Polygon.Diffuse.Factor"]
+            }
+        },
+        {
+            "styleSet": "southpole/DISABLED",
+            "description": "Soft depth is disabled until further notice",
+            "technique": "polygon",
+            "category": "offscreen-depth",
+            "attr": {
+                "enforce-ztest": true
+            }
+        }
+    ]
+}

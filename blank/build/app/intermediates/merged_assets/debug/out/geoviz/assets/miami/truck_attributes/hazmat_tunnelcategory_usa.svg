@@ -1,0 +1,17 @@
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="hazmat_tunnelcategory_usa">
+<rect width="28" height="28" fill="white" fill-opacity="0.01"/>
+<g id="non-stretchable_items">
+<g id="truck-icon_base03" clip-path="url(#clip0)">
+<path id="Vector" d="M26.9993 14.0002L13.9993 1.00018L0.999942 13.9995L14 26.9995L26.9993 14.0002Z" fill="black"/>
+<path id="Vector_2" d="M14.0006 24.9995L25.0002 13.9998L14.0006 3.00017L3.00095 13.9998L14.0006 24.9995Z" fill="#FF6600"/>
+</g>
+<path id="Vector_3" d="M19 13V19H18V15.973V13C18 10.794 16.206 9 14 9C11.794 9 10 10.794 10 13V15.973V19H9V13C9 10.238 11.238 8 14 8C16.762 8 19 10.238 19 13ZM14 11C12.343 11 11 12.343 11 14V18H13V14C13 13.448 13.448 13 14 13C14.553 13 15 13.448 15 14V18H17V14C17 12.343 15.657 11 14 11Z" fill="black"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="26" height="26" fill="white" transform="translate(1 1)"/>
+</clipPath>
+</defs>
+</svg>

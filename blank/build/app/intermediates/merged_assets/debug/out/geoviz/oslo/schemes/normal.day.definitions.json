@@ -1,0 +1,2012 @@
+{
+    "definitions": {
+        "Sky.Reference.Top": {
+            "value": 0.85
+        },
+        "Sky.ColorTop": {
+            "value": "#2271bf"
+        },
+        "Sky.ColorIntermediate": {
+            "value": "#c7dbf1"
+        },
+        "Sky.ColorBottom": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                7, "#b0cdec",
+                9, "#edf2f9"]
+        },
+        "Sky.ColorIntermediatePercent": {
+            "value": 15
+        },
+        "Sky.Horizon.Blend.Range": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                7, 0.4,
+                8, 0.3,
+                10, 0.15]
+        },
+        "NG.Sky.AltitudeFadeStart": {
+            "value": 125000
+        },
+        "NG.Sky.AltitudeFadeEnd": {
+            "value": 250000
+        },
+        "Fog.DistanceColor": {
+            "value": "#c8e1fa"
+        },
+        "FogDensity": {
+            "value": 0
+        },
+        "FogGlobalHorizonDensity": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 2.5,
+                1, 2.25,
+                2, 1.4,
+                3, 0.9,
+                4, 0.6,
+                5, 0.5,
+                6, 0.6,
+                7, 1,
+                8, 3,
+                9, 0]
+        },
+        "FogGlobalWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0.15,
+                1, 0.15,
+                2, 0.15,
+                3, 0.11,
+                4, 0.11,
+                5, 0.1,
+                6, 0.09,
+                7, 0.08,
+                8, 0.07,
+                9, 0]
+        },
+        "HaloLowOrbitSize": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                3, 1.07,
+                6, 1.08,
+                8, 1.1]
+        },
+        "HaloHighOrbitSize": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0.97,
+                1, 0.99,
+                2, 1]
+        },
+        "Land.Color": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, "#fbfbfb",
+                10, "#fbfdff",
+                16, "#f4f8fa"]
+        },
+        "BuiltupArea.Color": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                5, "#f0f4fa",
+                12, "#f2f6fb",
+                15, "#f2f6fb",
+                16, "#f0f4fa"]
+        },
+        "Woodland.Color": {
+            "value": "#daf9ea"
+        },
+        "WoodlandInfo.FontStyle.Color": {
+            "value": "#3b7e5c"
+        },
+        "WoodlandInfo.FontStyle.OutlineColor": {
+            "value": "#eff7f366"
+        },
+        "NationalPark.Color": {
+            "value": "#abf1d841"
+        },
+        "NationalParkInfo.FontStyle.Color": {
+            "value": "#4c8a71"
+        },
+        "NationalParkInfo.FontStyle.OutlineColor": {
+            "value": "#eafbf599"
+        },
+        "NationalParkInfo.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                6, 0,
+                6, 10,
+                12, 10,
+                13, 11,
+                15, 11,
+                16, 12,
+                20, 12]
+        },
+        "Park.Color": {
+            "value": "#d2f4e7"
+        },
+        "ParkInfo.FontStyle.Color": {
+            "value": "#3b7e5e"
+        },
+        "ParkInfo.FontStyle.OutlineColor": {
+            "value": "#eaf7f199"
+        },
+        "Beach.Color": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                9, "#f5f5b2",
+                11, "#f5f5d4",
+                13, "#f5f5da"]
+        },
+        "BeachInfo.FontStyle.Color": {
+            "value": "#707034"
+        },
+        "BeachInfo.FontStyle.OutlineColor": {
+            "value": "#fbfbf599"
+        },
+        "MilitaryBase.Color": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                7, "#eae6f94b",
+                13, "#eae6f941",
+                16, "#eae6f928"]
+        },
+        "MilitaryBaseInfo.FontStyle.Color": {
+            "value": "#706d88"
+        },
+        "MilitaryBaseInfo.FontStyle.OutlineColor": {
+            "value": "#f5f7fc99"
+        },
+        "MilitaryBaseInfo.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                6, 0,
+                6, 10,
+                12, 10,
+                13, 11,
+                15, 11,
+                16, 12,
+                20, 12]
+        },
+        "NativeReservation.Color": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                7, "#fae8da4b",
+                13, "#fae8da3c",
+                16, "#fae9d828"]
+        },
+        "NativeReservationInfo.FontStyle.Color": {
+            "value": "#85756a"
+        },
+        "NativeReservationInfo.FontStyle.OutlineColor": {
+            "value": "#fbf3ed99"
+        },
+        "NativeReservationInfo.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                6, 0,
+                6, 10,
+                12, 10,
+                13, 11,
+                15, 11,
+                16, 12,
+                20, 12]
+        },
+        "GolfCourse.Color": {
+            "value": "#c6f1e7"
+        },
+        "GolfCourseInfo.FontStyle.Color": {
+            "value": "#397e6d"
+        },
+        "GolfCourseInfo.FontStyle.OutlineColor": {
+            "value": "#e8f5f399"
+        },
+        "WaterParkInfo.FontStyle.Color": {
+            "value": "#3f3fff"
+        },
+        "LandCover.Glacier.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                6, 0,
+                6, 9,
+                11, 9,
+                12, 10,
+                15, 10,
+                16, 11,
+                20, 11]
+        },
+        "LandCover.Glacier.FontStyle.OutlineWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                6, 0,
+                6, 1]
+        },
+        "LandCover.Glacier.Color": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                10, "#ecf7ff",
+                16, "#e8f4ff"]
+        },
+        "LandCover.Glacier.FontStyle.Color": {
+            "value": "#3b637e"
+        },
+        "LandCover.Glacier.FontStyle.OutlineColor": {
+            "value": "#f0f4f799"
+        },
+        "HospitalCampus.Color": {
+            "value": "#fcebf4"
+        },
+        "HospitalCampusInfo.FontStyle.Color": {
+            "value": "#806879"
+        },
+        "HospitalCampusInfo.FontStyle.OutlineColor": {
+            "value": "#f7f1f599"
+        },
+        "HospitalCampusInfo.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                12, 0,
+                12, 10,
+                13, 11,
+                15, 11,
+                16, 12,
+                20, 12]
+        },
+        "UniversityCampus.Color": {
+            "value": "#f7f2e8"
+        },
+        "UniversityCampusInfo.FontStyle.Color": {
+            "value": "#7e7568"
+        },
+        "UniversityCampusInfo.FontStyle.OutlineColor": {
+            "value": "#f7f4f099"
+        },
+        "Cemetery.Color": {
+            "value": "#e4f3f4"
+        },
+        "CemeteryInfo.FontStyle.Color": {
+            "value": "#617a7a"
+        },
+        "CemeteryInfo.FontStyle.OutlineColor": {
+            "value": "#f0f7f799"
+        },
+        "CemeteryInfo.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                12, 0,
+                12, 10,
+                13, 11,
+                15, 11,
+                16, 12,
+                20, 12]
+        },
+        "Allotment.Color": {
+            "value": ["ref", "Cemetery.Color"]
+        },
+        "AllotmentInfo.FontStyle.Color": {
+            "value": ["ref", "CemeteryInfo.FontStyle.Color"]
+        },
+        "AllotmentInfo.FontStyle.OutlineColor": {
+            "value": ["ref", "CemeteryInfo.FontStyle.OutlineColor"]
+        },
+        "AllotmentInfo.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                12, 0,
+                12, 10,
+                13, 11,
+                15, 11,
+                16, 12,
+                20, 12]
+        },
+        "SportsComplex.Color": {
+            "value": ["ref", "Cemetery.Color"]
+        },
+        "SportsComplexInfo.FontStyle.Color": {
+            "value": ["ref", "CemeteryInfo.FontStyle.Color"]
+        },
+        "SportsComplexInfo.FontStyle.OutlineColor": {
+            "value": ["ref", "CemeteryInfo.FontStyle.OutlineColor"]
+        },
+        "SportsComplexInfo.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                12, 0,
+                12, 10,
+                13, 11,
+                15, 11,
+                16, 12,
+                20, 12]
+        },
+        "AnimalPark.Color": {
+            "value": ["ref", "Cemetery.Color"]
+        },
+        "AnimalParkInfo.FontStyle.Color": {
+            "value": ["ref", "CemeteryInfo.FontStyle.Color"]
+        },
+        "AnimalParkInfo.FontStyle.OutlineColor": {
+            "value": ["ref", "CemeteryInfo.FontStyle.OutlineColor"]
+        },
+        "AnimalParkInfo.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                12, 0,
+                12, 10,
+                13, 11,
+                15, 11,
+                16, 12,
+                20, 12]
+        },
+        "AmusementPark.Color": {
+            "value": ["ref", "Cemetery.Color"]
+        },
+        "AmusementParkInfo.FontStyle.Color": {
+            "value": ["ref", "CemeteryInfo.FontStyle.Color"]
+        },
+        "AmusementParkInfo.FontStyle.OutlineColor": {
+            "value": ["ref", "CemeteryInfo.FontStyle.OutlineColor"]
+        },
+        "AmusementParkInfo.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                12, 0,
+                12, 10,
+                13, 11,
+                15, 11,
+                16, 12,
+                20, 12]
+        },
+        "IndustrialComplex.Color": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                15, "#ebeff7",
+                16, "#eaeff8"]
+        },
+        "IndustrialComplexInfo.FontStyle.Color": {
+            "value": "#677080"
+        },
+        "IndustrialComplexInfo.FontStyle.OutlineColor": {
+            "value": "#eff2f799"
+        },
+        "AirportArea.Color": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                9, "#e7e9fb",
+                13, "#edeffd"]
+        },
+        "AirportAreaInfo.FontStyle.Color": {
+            "value": "#6a6d82"
+        },
+        "AirportAreaInfo.FontStyle.OutlineColor": {
+            "value": "#f1f2f799"
+        },
+        "Runway.Color": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                11, "#dee2f7",
+                14, "#e7e9fa"]
+        },
+        "ShoppingComplex.Color": {
+            "value": ["ref", "IndustrialComplex.Color"]
+        },
+        "ShoppingComplexInfo.FontStyle.Color": {
+            "value": ["ref", "IndustrialComplexInfo.FontStyle.Color"]
+        },
+        "ShoppingComplexInfo.FontStyle.OutlineColor": {
+            "value": ["ref", "IndustrialComplexInfo.FontStyle.OutlineColor"]
+        },
+        "ShoppingComplexInfo.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                12, 0,
+                12, 10,
+                13, 11,
+                15, 11,
+                16, 12,
+                20, 12]
+        },
+        "PedestrianArea.Color": {
+            "value": ["ref", "IndustrialComplex.Color"]
+        },
+        "PedestrianAreaInfo.FontStyle.Color": {
+            "value": ["ref", "IndustrialComplexInfo.FontStyle.Color"]
+        },
+        "PedestrianAreaInfo.FontStyle.OutlineColor": {
+            "value": ["ref", "IndustrialComplexInfo.FontStyle.OutlineColor"]
+        },
+        "Railyard.Color": {
+            "value": ["ref", "IndustrialComplex.Color"]
+        },
+        "RailyardInfo.FontStyle.Color": {
+            "value": ["ref", "IndustrialComplexInfo.FontStyle.Color"]
+        },
+        "RailyardInfo.FontStyle.OutlineColor": {
+            "value": ["ref", "IndustrialComplexInfo.FontStyle.OutlineColor"]
+        },
+        "HarborArea.Color": {
+            "value": ["ref", "IndustrialComplex.Color"]
+        },
+        "HarborAreaInfo.FontStyle.Color": {
+            "value": ["ref", "IndustrialComplexInfo.FontStyle.Color"]
+        },
+        "HarborAreaInfo.FontStyle.OutlineColor": {
+            "value": ["ref", "IndustrialComplexInfo.FontStyle.OutlineColor"]
+        },
+        "IslandInfo.FontStyle.Color": {
+            "value": "#585f3e"
+        },
+        "IslandInfo.FontStyle.OutlineColor": {
+            "value": "#f5f5f546"
+        },
+        "IslandInfo.FontStyle.OutlineWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                6, 0,
+                6, 1]
+        },
+        "IslandInfo.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                6, 0,
+                6, 9,
+                11, 10,
+                12, 11,
+                13, 11,
+                14, 12,
+                15, 12,
+                16, 13,
+                17, 13,
+                20, 13]
+        },
+        "MountainPeakInfo.FontStyle.Color": {
+            "value": "#716561"
+        },
+        "MountainPeakInfo.FontStyle.OutlineColor": {
+            "value": "#fafeff99"
+        },
+        "MountainPeakInfo.FontStyle.Leading": {
+            "value": 3
+        },
+        "Rail.PolylineStyles.Color": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                12, "#d2d7dc",
+                13, "#d2d7dc"]
+        },
+        "Rail.PolylineStyles.OutlineColor": {
+            "value": ["ref", "Rail.PolylineStyles.Color"]
+        },
+        "Rail.PolylineStyles.SecondaryColor": {
+            "value": "#b8bdc2"
+        },
+        "Rail.PolylineStyles.CenterLine.Color": {
+            "value": ["ref", "Rail.PolylineStyles.Color"]
+        },
+        "Rail.PolylineStyles.Width": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 1,
+                13, 1,
+                14, 1.5,
+                16, 1.5,
+                18, 3]
+        },
+        "Rail.PolylineStyles.OutlineWidth": {
+            "value": 0
+        },
+        "Rail.PolylineStyles.DashArray1": {
+            "value": ["step", ["zoom"],
+                4,
+                15, 5,
+                16, 6,
+                17, 9,
+                18, 10,
+                19, 12,
+                20, 14]
+        },
+        "Rail.PolylineStyles.DashArray2": {
+            "value": ["step", ["zoom"],
+                4,
+                13, 6,
+                15, 8,
+                16, 10,
+                17, 15,
+                18, 20,
+                19, 25,
+                20, 30]
+        },
+        "Ferry.PolylineStyles.Color": {
+            "value": "#cae7fc"
+        },
+        "Ferry.PolylineStyles.SecondaryColor": {
+            "value": "#7bbae500"
+        },
+        "Ferry.PolylineStyles.Width": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                9, 0,
+                9, 1.125,
+                12, 1.5]
+        },
+        "Ferry.PolylineStyles.DashArray1": {
+            "value": ["step", ["zoom"],
+                1,
+                8, 3,
+                9, 4,
+                9.5, 3.5,
+                10, 4.5,
+                10.5, 4,
+                11, 5.5,
+                11.5, 4,
+                12, 6,
+                12.5, 4,
+                13, 6,
+                13.5, 5,
+                14, 7,
+                14.5, 5,
+                15, 7,
+                15.5, 5,
+                16, 8,
+                16.5, 5.5,
+                17, 8,
+                17.5, 5.5,
+                18, 7,
+                18.5, 6,
+                19, 8,
+                19.5, 6,
+                20, 7]
+        },
+        "Ferry.PolylineStyles.DashArray2": {
+            "value": ["step", ["zoom"],
+                1,
+                8, 3,
+                9, 4,
+                9.5, 5,
+                10, 7,
+                10.5, 6,
+                11, 7.5,
+                11.5, 6.5,
+                12, 8.5,
+                12.5, 6.5,
+                13, 8,
+                13.5, 7,
+                14, 10,
+                14.5, 8,
+                15, 11,
+                15.5, 8,
+                16, 11,
+                16.5, 9,
+                17, 12,
+                17.5, 9,
+                18, 12,
+                18.5, 10,
+                19, 12,
+                19.5, 10,
+                20, 12]
+        },
+        "Ferry.FontStyle.Color": {
+            "value": "#f0f7fc"
+        },
+        "Ferry.FontStyle.OutlineColor": {
+            "value": "#78bbeb"
+        },
+        "Ferry.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                10, 0,
+                10, 10,
+                12, 10,
+                14, 11,
+                15, 12,
+                16, 12,
+                17, 13]
+        },
+        "Ferry.FontStyle.OutlineWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                10, 0,
+                10, 1]
+        },
+        "Water.Color.0m": {
+            "value": "#91d0fa"
+        },
+        "CanalWaterChannel.Color": {
+            "value": ["ref", "Water.Color.0m"]
+        },
+        "River.Color": {
+            "value": ["ref", "Water.Color.0m"]
+        },
+        "IntermittentRiver.Color": {
+            "value": ["ref", "Water.Color.0m"]
+        },
+        "Lake.FontStyle.Color": {
+            "value": "#1a63a2"
+        },
+        "Lake.FontStyle.OutlineWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                7, 0,
+                7, 1]
+        },
+        "Lake.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                7, 0,
+                7, 9.5,
+                11, 10,
+                12, 11,
+                15, 11,
+                16, 12,
+                20, 12]
+        },
+        "CanalWaterChannel.FontStyle.Color": {
+            "value": ["ref", "Lake.FontStyle.Color"]
+        },
+        "River.FontStyle.Color": {
+            "value": ["ref", "Lake.FontStyle.Color"]
+        },
+        "IntermittentRiver.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                7, 0,
+                7, 9.5,
+                11, 10,
+                12, 11,
+                15, 11,
+                16, 12,
+                20, 12]
+        },
+        "IntermittentRiver.FontStyle.OutlineWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                7, 0,
+                7, 1]
+        },
+        "IntermittentRiver.FontStyle.Color": {
+            "value": ["ref", "Lake.FontStyle.Color"]
+        },
+        "Sea.FontStyle.Color": {
+            "value": ["ref", "Lake.FontStyle.Color"]
+        },
+        "Ocean.FontStyle.Color": {
+            "value": ["ref", "Lake.FontStyle.Color"]
+        },
+        "BayHarbour.FontStyle.Color": {
+            "value": ["ref", "Lake.FontStyle.Color"]
+        },
+        "Fjord.FontStyle.Color": {
+            "value": ["ref", "Lake.FontStyle.Color"]
+        },
+        "Strait.FontStyle.Color": {
+            "value": ["ref", "Lake.FontStyle.Color"]
+        },
+        "Lake.FontStyle.OutlineColor": {
+            "value": "#eef4f74b"
+        },
+        "CanalWaterChannel.FontStyle.OutlineColor": {
+            "value": ["ref", "Lake.FontStyle.OutlineColor"]
+        },
+        "CanalWaterChannel.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                7, 0,
+                7, 9.5,
+                11, 10,
+                12, 11,
+                15, 11,
+                16, 12,
+                20, 12]
+        },
+        "CanalWaterChannel.FontStyle.OutlineWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                7, 0,
+                7, 1]
+        },
+        "River.FontStyle.OutlineWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                7, 0,
+                7, 1]
+        },
+        "River.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                7, 0,
+                7, 9.5,
+                11, 10,
+                12, 11,
+                15, 11,
+                16, 12,
+                20, 12]
+        },
+        "River.FontStyle.OutlineColor": {
+            "value": ["ref", "Lake.FontStyle.OutlineColor"]
+        },
+        "IntermittentRiver.FontStyle.OutlineColor": {
+            "value": ["ref", "Lake.FontStyle.OutlineColor"]
+        },
+        "Sea.FontStyle.OutlineColor": {
+            "value": ["ref", "Lake.FontStyle.OutlineColor"]
+        },
+        "Ocean.FontStyle.OutlineColor": {
+            "value": ["ref", "Lake.FontStyle.OutlineColor"]
+        },
+        "BayHarbour.FontStyle.OutlineColor": {
+            "value": ["ref", "Lake.FontStyle.OutlineColor"]
+        },
+        "Fjord.FontStyle.OutlineColor": {
+            "value": ["ref", "Lake.FontStyle.OutlineColor"]
+        },
+        "Strait.FontStyle.OutlineColor": {
+            "value": ["ref", "Lake.FontStyle.OutlineColor"]
+        },
+        "Sea.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                2, 0,
+                2, 8,
+                5, 12,
+                6, 12,
+                7, 13,
+                8, 14,
+                20, 14]
+        },
+        "Sea.FontStyle.OutlineWidth": {
+            "value": 1
+        },
+        "Ocean.FontStyle.Size": {
+            "value": ["ref", "Sea.FontStyle.Size"]
+        },
+        "Ocean.FontStyle.OutlineWidth": {
+            "value": ["ref", "Sea.FontStyle.OutlineWidth"]
+        },
+        "BayHarbour.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                5, 0,
+                5, 9.5,
+                6, 10,
+                7, 11,
+                8, 12,
+                20, 12]
+        },
+        "BayHarbour.FontStyle.OutlineWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                5, 0,
+                5, 1]
+        },
+        "Street.Category4.Color": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                13, "#ccd5e0",
+                13.8, "#bac2cc",
+                14.7, "#bac2cc",
+                14.8, "#d4dce5",
+                15, "#dee5ee",
+                16, "#e3eaf4"]
+        },
+        "Street.Category4.OutlineColor": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                13, "#b4c2d4",
+                14, "#a5b1c1",
+                16, "#a5b1c1",
+                18, "#647589"]
+        },
+        "Street.Category4.Width": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 1,
+                13, 1,
+                14, 2.25,
+                15, 2.5,
+                16, 5.5,
+                17, 7,
+                18, 17,
+                19, 21,
+                20, 37]
+        },
+        "Street.Category4.Outline.Width": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                15, 0,
+                16, 0.1]
+        },
+        "Street.Category4.FontStyle.Color": {
+            "value": "#0a324c"
+        },
+        "Street.Category3.Color": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                12, "#bac2cc",
+                12.9, "#bac2cc",
+                13, "#d3dde8",
+                14, "#d8dfe8",
+                16, "#e3eaf4"]
+        },
+        "Street.Category3.OutlineColor": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                13, "#bec6d1",
+                14, "#77899e",
+                17, "#6e7f93",
+                18, "#647589"]
+        },
+        "Street.Category3.Width": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 1,
+                10, 1.25,
+                13, 1.65,
+                14, 3.5,
+                15, 4.25,
+                16, 8.75,
+                17, 12,
+                18, 25,
+                19, 28,
+                20, 47]
+        },
+        "Street.Category3.Outline.Width": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                14, 0,
+                15, 0.1]
+        },
+        "Street.Category3.FontStyle.Color": {
+            "value": "#0a324c"
+        },
+        "Street.Category2.Color": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                10, "#d0ddeb",
+                12, "#d2ddec",
+                13, "#d4e1f5",
+                16, "#d3e0f0"]
+        },
+        "Street.Category2.OutlineColor": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                12, "#a0adcf",
+                13, "#8c99a1",
+                16, "#8c99a1"]
+        },
+        "Street.Category2.Width": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 1,
+                8, 1.25,
+                10, 1.5,
+                11, 2,
+                12, 2.5,
+                13, 2.5,
+                14, 3.5,
+                15, 5.75,
+                16, 9,
+                17, 13,
+                18, 27,
+                19, 30,
+                20, 50]
+        },
+        "Street.Category2.Outline.Width": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                12, 0,
+                13, 0.25,
+                20, 0.5]
+        },
+        "Street.Category2.FontStyle.Color": {
+            "value": "#0a324c"
+        },
+        "Street.Category1.Color": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                5, "#becbdd",
+                6, "#c3d0e2",
+                7, "#d2dfeb",
+                8, "#c3d0e2",
+                10, "#d7e4f6",
+                13, "#c2d1e1",
+                16, "#c0cfdf"]
+        },
+        "Street.Category1.OutlineColor": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                6, "#738092",
+                8, "#6c798a",
+                10, "#94a3b3",
+                13, "#5c6c81",
+                16, "#66768b"]
+        },
+        "Street.Category1.Width": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 1.25,
+                5, 1.25,
+                8, 2,
+                9, 2.5,
+                10, 2,
+                11, 2.75,
+                12, 3,
+                13, 3.5,
+                14, 5,
+                15, 7,
+                16, 11,
+                17, 15,
+                18, 30,
+                19, 34,
+                20, 54]
+        },
+        "Street.Category1.Outline.Width": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                9, 0,
+                10, 0.5]
+        },
+        "Street.Category1.FontStyle.Color": {
+            "value": "#002d47"
+        },
+        "Street.Category0.Color": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                5, "#aab7c9",
+                6, "#afbcce",
+                8, "#c3d0e2",
+                10, "#bfccde",
+                13, "#b8c7d7",
+                16, "#b6c5d5"]
+        },
+        "Street.Category0.OutlineColor": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                6, "#738092",
+                8, "#6e7b8d",
+                10, "#677686",
+                13, "#57677c",
+                16, "#57677c"]
+        },
+        "Street.Category0.CenterLine.Color": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                6, "#738092",
+                8, "#6c798a",
+                11, "#a5b4c4",
+                13, "#8d9eb0",
+                16, "#8b9aad"]
+        },
+        "Street.Category0.Width": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 1.75,
+                5, 1.75,
+                6, 2.25,
+                7, 2.5,
+                8, 2,
+                9, 2.5,
+                10, 3.75,
+                11, 4,
+                12, 5,
+                13, 5.5,
+                14, 8,
+                15, 12,
+                16, 16,
+                17, 20,
+                18, 35,
+                19, 45,
+                20, 70]
+        },
+        "Street.Category0.Outline.Width": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                7, 0,
+                8, 0.5,
+                14, 0.75,
+                16, 1.25,
+                18, 1.5]
+        },
+        "Street.Category0.FontStyle.Color": {
+            "value": "#002d47"
+        },
+        "Street.Category4.TollColor": {
+            "value": ["ref", "Street.Category4.Color"]
+        },
+        "Street.Category4.TollOutlineColor": {
+            "value": ["ref", "Street.Category4.OutlineColor"]
+        },
+        "Street.Category4.TunnelColor": {
+            "value": ["ref", "Street.Category4.Color"]
+        },
+        "Street.Category4.TunnelOutlineColor": {
+            "value": ["ref", "Street.Category4.OutlineColor"]
+        },
+        "Street.Category4.UnpavedColor": {
+            "value": ["ref", "Street.Category4.Color"]
+        },
+        "Street.Category4.UnpavedOutlineColor": {
+            "value": ["ref", "Street.Category4.OutlineColor"]
+        },
+        "Street.Category4.BridgeColor": {
+            "value": "#99abbf44"
+        },
+        "Street.Category4.RampOutlineWidth": {
+            "value": ["ref", "Street.Category4.Outline.Width"]
+        },
+        "Street.Category4.FontStyle.OutlineWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 1.25,
+                12, 1.25,
+                14, 1.5,
+                16, 2,
+                18, 2.25]
+        },
+        "Street.Category4.FontStyle.OutlineColor": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                11, "#fffffff2",
+                12, "#fffffff2",
+                14, "#ffffffd9",
+                17, "#ffffffcc"]
+        },
+        "Street.Category4.FontStyle.TollOutlineColor": {
+            "value": ["ref", "Street.Category4.FontStyle.OutlineColor"]
+        },
+        "Street.Category4.FontStyle.UnpavedColor": {
+            "value": ["ref", "Street.Category4.FontStyle.Color"]
+        },
+        "Street.Category4.FontStyle.UnpavedOutlineColor": {
+            "value": ["ref", "Street.Category4.FontStyle.OutlineColor"]
+        },
+        "Street.Category3.TollColor": {
+            "value": ["ref", "Street.Category3.Color"]
+        },
+        "Street.Category3.TollOutlineColor": {
+            "value": ["ref", "Street.Category3.OutlineColor"]
+        },
+        "Street.Category3.TunnelColor": {
+            "value": ["ref", "Street.Category3.Color"]
+        },
+        "Street.Category3.TunnelOutlineColor": {
+            "value": ["ref", "Street.Category3.OutlineColor"]
+        },
+        "Street.Category3.UnpavedColor": {
+            "value": ["ref", "Street.Category3.Color"]
+        },
+        "Street.Category3.UnpavedOutlineColor": {
+            "value": ["ref", "Street.Category3.OutlineColor"]
+        },
+        "Street.Category3.BridgeColor": {
+            "value": "#99abbf44"
+        },
+        "Street.Category3.RampOutlineWidth": {
+            "value": ["ref", "Street.Category3.Outline.Width"]
+        },
+        "Street.Category3.FontStyle.OutlineWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 1.25,
+                12, 1.25,
+                14, 1.5,
+                16, 2,
+                18, 2.25]
+        },
+        "Street.Category3.FontStyle.OutlineColor": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                11, "#fffffff2",
+                12, "#fffffff2",
+                14, "#ffffffd9",
+                17, "#ffffffcc"]
+        },
+        "Street.Category3.FontStyle.TollOutlineColor": {
+            "value": ["ref", "Street.Category3.FontStyle.OutlineColor"]
+        },
+        "Street.Category3.FontStyle.UnpavedColor": {
+            "value": ["ref", "Street.Category3.FontStyle.Color"]
+        },
+        "Street.Category3.FontStyle.UnpavedOutlineColor": {
+            "value": ["ref", "Street.Category3.FontStyle.OutlineColor"]
+        },
+        "Street.Category2.TollColor": {
+            "value": ["ref", "Street.Category2.Color"]
+        },
+        "Street.Category2.TollOutlineColor": {
+            "value": ["ref", "Street.Category2.OutlineColor"]
+        },
+        "Street.Category2.TunnelColor": {
+            "value": ["ref", "Street.Category2.Color"]
+        },
+        "Street.Category2.TunnelOutlineColor": {
+            "value": ["ref", "Street.Category2.OutlineColor"]
+        },
+        "Street.Category2.UnpavedColor": {
+            "value": ["ref", "Street.Category2.Color"]
+        },
+        "Street.Category2.UnpavedOutlineColor": {
+            "value": ["ref", "Street.Category2.OutlineColor"]
+        },
+        "Street.Category2.BridgeColor": {
+            "value": "#87879559"
+        },
+        "Street.Category2.RampOutlineWidth": {
+            "value": ["ref", "Street.Category2.Outline.Width"]
+        },
+        "Street.Category2.FontStyle.OutlineWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 1.25,
+                12, 1.25,
+                14, 1.5,
+                16, 2,
+                18, 2.25]
+        },
+        "Street.Category2.FontStyle.OutlineColor": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                11, "#fffffff2",
+                12, "#fffffff2",
+                14, "#ffffffd9",
+                17, "#ffffffcc"]
+        },
+        "Street.Category2.FontStyle.TollOutlineColor": {
+            "value": ["ref", "Street.Category2.FontStyle.OutlineColor"]
+        },
+        "Street.Category2.FontStyle.UnpavedColor": {
+            "value": ["ref", "Street.Category2.FontStyle.Color"]
+        },
+        "Street.Category2.FontStyle.UnpavedOutlineColor": {
+            "value": ["ref", "Street.Category2.FontStyle.OutlineColor"]
+        },
+        "Street.Category1.TollColor": {
+            "value": ["ref", "Street.Category1.Color"]
+        },
+        "Street.Category1.TollOutlineColor": {
+            "value": ["ref", "Street.Category1.OutlineColor"]
+        },
+        "Street.Category1.TunnelColor": {
+            "value": ["ref", "Street.Category1.Color"]
+        },
+        "Street.Category1.TunnelOutlineColor": {
+            "value": ["ref", "Street.Category1.OutlineColor"]
+        },
+        "Street.Category1.UnpavedColor": {
+            "value": ["ref", "Street.Category1.Color"]
+        },
+        "Street.Category1.UnpavedOutlineColor": {
+            "value": ["ref", "Street.Category1.OutlineColor"]
+        },
+        "Street.Category1.BridgeColor": {
+            "value": "#87879559"
+        },
+        "Street.Category1.RampOutlineWidth": {
+            "value": ["ref", "Street.Category1.Outline.Width"]
+        },
+        "Street.Category1.FontStyle.OutlineWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 1.25,
+                11, 1.25,
+                14, 1.5,
+                16, 2,
+                18, 2.25]
+        },
+        "Street.Category1.FontStyle.OutlineColor": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                11, "#fffffff2",
+                12, "#fffffff2",
+                14, "#ffffffd9",
+                17, "#ffffffcc"]
+        },
+        "Street.Category1.FontStyle.TollOutlineColor": {
+            "value": ["ref", "Street.Category1.FontStyle.OutlineColor"]
+        },
+        "Street.Category1.FontStyle.UnpavedColor": {
+            "value": ["ref", "Street.Category1.FontStyle.Color"]
+        },
+        "Street.Category1.FontStyle.UnpavedOutlineColor": {
+            "value": ["ref", "Street.Category1.FontStyle.OutlineColor"]
+        },
+        "Street.Category0.TollColor": {
+            "value": ["ref", "Street.Category0.Color"]
+        },
+        "Street.Category0.TollOutlineColor": {
+            "value": ["ref", "Street.Category0.OutlineColor"]
+        },
+        "Street.Category0.TunnelColor": {
+            "value": ["ref", "Street.Category0.Color"]
+        },
+        "Street.Category0.TunnelOutlineColor": {
+            "value": ["ref", "Street.Category0.OutlineColor"]
+        },
+        "Street.Category0.UnpavedColor": {
+            "value": ["ref", "Street.Category0.Color"]
+        },
+        "Street.Category0.UnpavedOutlineColor": {
+            "value": ["ref", "Street.Category0.OutlineColor"]
+        },
+        "Street.Category0.TollCenterlineColor": {
+            "value": ["ref", "Street.Category0.CenterLine.Color"]
+        },
+        "Street.Category0.CenterLine.TunnelColor": {
+            "value": ["ref", "Street.Category0.CenterLine.Color"]
+        },
+        "Street.Category0.BridgeColor": {
+            "value": "#87879559"
+        },
+        "Street.Category0.RampOutlineWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                7, 0,
+                8, 0.25,
+                14, 0.3,
+                16, 0.6,
+                18, 0.75]
+        },
+        "Street.Category0.FontStyle.OutlineWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                10, 1.25,
+                11, 1.25,
+                13, 1.5,
+                14, 1.75,
+                15, 2,
+                16, 2.25,
+                18, 2.5]
+        },
+        "Street.Category0.FontStyle.OutlineColor": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                11, "#fffffff2",
+                12, "#fffffff2",
+                14, "#ffffffd9",
+                17, "#ffffffcc"]
+        },
+        "Street.Category0.FontStyle.TollOutlineColor": {
+            "value": ["ref", "Street.Category0.FontStyle.OutlineColor"]
+        },
+        "Street.Category0.FontStyle.UnpavedColor": {
+            "value": ["ref", "Street.Category0.FontStyle.Color"]
+        },
+        "Street.Category0.FontStyle.UnpavedOutlineColor": {
+            "value": ["ref", "Street.Category0.FontStyle.OutlineColor"]
+        },
+        "Street.Walkway.Color": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                15, "#b7c7c3",
+                15.9, "#b7c7c3",
+                16, "#cce1dc",
+                17, "#bed4ce"]
+        },
+        "Street.Walkway.UnpavedColor": {
+            "value": ["ref", "Street.Walkway.Color"]
+        },
+        "Street.Walkway.FontStyle.Color": {
+            "value": "#464e58"
+        },
+        "Street.Walkway.FontStyle.OutlineColor": {
+            "value": "#f0f8ffa6"
+        },
+        "Street.Walkway.FontStyle.UnpavedOutlineColor": {
+            "value": ["ref", "Street.Walkway.FontStyle.OutlineColor"]
+        },
+        "Street.Walkway.Width": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                14, 0,
+                14, 1]
+        },
+        "Street.Walkway.UnpavedWidth": {
+            "value": ["ref", "Street.Walkway.Width"]
+        },
+        "Street.Pedestrian.Color": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                15, "#b0b7c2",
+                15.9, "#b0b7c2",
+                16, "#cad2df"]
+        },
+        "Street.Pedestrian.OutlineColor": {
+            "value": "#bdc5d1"
+        },
+        "Street.Pedestrian.BridgeColor": {
+            "value": "#99abbf44"
+        },
+        "Street.Pedestrian.TunnelColor": {
+            "value": ["ref", "Street.Pedestrian.Color"]
+        },
+        "Street.Pedestrian.TollColor": {
+            "value": ["ref", "Street.Pedestrian.Color"]
+        },
+        "Street.Pedestrian.TollOutlineColor": {
+            "value": ["ref", "Street.Pedestrian.OutlineColor"]
+        },
+        "Street.Pedestrian.UnpavedColor": {
+            "value": ["ref", "Street.Pedestrian.Color"]
+        },
+        "Street.Pedestrian.UnpavedOutlineColor": {
+            "value": ["ref", "Street.Pedestrian.OutlineColor"]
+        },
+        "Street.Pedestrian.Width": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                14, 0,
+                14, 1,
+                15, 1,
+                16, 3,
+                17, 4,
+                18, 5,
+                19, 7,
+                20, 8]
+        },
+        "Street.Pedestrian.UnpavedWidth": {
+            "value": ["ref", "Street.Pedestrian.Width"]
+        },
+        "Street.Pedestrian.FontStyle.Color": {
+            "value": "#002d47"
+        },
+        "Street.Pedestrian.FontStyle.OutlineColor": {
+            "value": "#ffffff96"
+        },
+        "Street.Pedestrian.FontStyle.UnpavedColor": {
+            "value": ["ref", "Street.Pedestrian.FontStyle.Color"]
+        },
+        "Street.Pedestrian.FontStyle.UnpavedOutlineColor": {
+            "value": ["ref", "Street.Pedestrian.FontStyle.OutlineColor"]
+        },
+        "Street.Category0.ArrowColor": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                16.75, "#99aabf00",
+                17, "#99aabf"]
+        },
+        "Street.Category0.ArrowTollColor": {
+            "value": ["ref", "Street.Category0.ArrowColor"]
+        },
+        "Street.Category0.ArrowUnpavedColor": {
+            "value": ["ref", "Street.Category0.ArrowColor"]
+        },
+        "Street.Category1.ArrowColor": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                16.75, "#a3b5cc00",
+                17, "#a3b5cc"]
+        },
+        "Street.Category1.ArrowTollColor": {
+            "value": ["ref", "Street.Category1.ArrowColor"]
+        },
+        "Street.Category1.ArrowUnpavedColor": {
+            "value": ["ref", "Street.Category0.ArrowUnpavedColor"]
+        },
+        "Street.Category2.ArrowColor": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                17, "#b6c7de00",
+                17.25, "#b6c7de"]
+        },
+        "Street.Category2.ArrowTollColor": {
+            "value": ["ref", "Street.Category2.ArrowColor"]
+        },
+        "Street.Category2.ArrowUnpavedColor": {
+            "value": ["ref", "Street.Category0.ArrowUnpavedColor"]
+        },
+        "Street.Category3.ArrowColor": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                17, "#bdcadb00",
+                17.25, "#bdcadb"]
+        },
+        "Street.Category3.ArrowTollColor": {
+            "value": ["ref", "Street.Category3.ArrowColor"]
+        },
+        "Street.Category3.ArrowUnpavedColor": {
+            "value": ["ref", "Street.Category0.ArrowUnpavedColor"]
+        },
+        "Street.Category4.ArrowColor": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                17.25, "#bdcadb00",
+                17.5, "#bdcadb"]
+        },
+        "Street.Category4.ArrowTollColor": {
+            "value": ["ref", "Street.Category4.ArrowColor"]
+        },
+        "Street.Category4.ArrowUnpavedColor": {
+            "value": ["ref", "Street.Category0.ArrowUnpavedColor"]
+        },
+        "CountryBoundary.Color": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, "#f0d8e1",
+                4, "#d9a3b9",
+                6, "#cc7a9c",
+                11, "#cc7a9c",
+                13, "#d16d97"]
+        },
+        "CountryBoundary.BackgroundColor": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, "#d9b8c100",
+                4, "#d9b8c120",
+                12, "#bf9da71a"]
+        },
+        "CountryBoundary.Width": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                4, 1.5]
+        },
+        "CountryBoundary.BackgroundWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                4, 0,
+                5, 6,
+                7, 6,
+                8, 7,
+                10, 7,
+                11, 8,
+                24, 10]
+        },
+        "CountryBoundaryDisputed.Color": {
+            "value": ["ref", "CountryBoundary.Color"]
+        },
+        "CountryBoundaryDisputed.BackgroundColor": {
+            "value": ["ref", "CountryBoundary.BackgroundColor"]
+        },
+        "StateBoundary.Color": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                6, "#f2d3df",
+                11, "#deb1c3",
+                16, "#deabbf"]
+        },
+        "StateBoundary.BackgroundColor": {
+            "value": "#f2ced71a"
+        },
+        "StateBoundary.BackgroundWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                5, 0,
+                5, 5,
+                7, 5,
+                8, 6,
+                10, 6,
+                11, 7,
+                24, 9]
+        },
+        "StateBoundaryDisputed.Color": {
+            "value": ["ref", "StateBoundary.Color"]
+        },
+        "StateBoundaryDisputed.BackgroundColor": {
+            "value": ["ref", "StateBoundary.BackgroundColor"]
+        },
+        "MajorCountryLabel.FontStyle.Color": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                3, "#8c3f5dcc",
+                4, "#802d4ccc",
+                5, "#802d4ccc",
+                6, "#8c3f5dcc"]
+        },
+        "MajorCountryLabel.FontStyle.OutlineColor": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                5, "#fafdff66",
+                6, "#fafdff99"]
+        },
+        "MajorCountryLabel.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                2, 0,
+                2, 9,
+                7, 17,
+                7, 0]
+        },
+        "MajorCountryLabel.FontStyle.Tracking": {
+            "value": 1
+        },
+        "StateLabel.FontStyle.Color": {
+            "value": "#996379"
+        },
+        "StateLabel.FontStyle.OutlineColor": {
+            "value": "#fafdff99"
+        },
+        "StateLabel.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                4, 0,
+                4, 10,
+                5, 11,
+                6, 13,
+                7, 14,
+                8, 14,
+                8, 0]
+        },
+        "StateLabel.FontStyle.Tracking": {
+            "value": 1
+        },
+        "ContinentLabel.FontStyle.Color": {
+            "value": "#594f53cc"
+        },
+        "ContinentLabel.FontStyle.OutlineColor": {
+            "value": "#fafdff99"
+        },
+        "ContinentLabel.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 12,
+                2, 16,
+                2.1, 0]
+        },
+        "ContinentLabel.FontStyle.OutlineWidth": {
+            "value": 1
+        },
+        "ContinentLabel.FontStyle.AllCaps": {
+            "value": false
+        },
+        "ContinentLabel.FontStyle.Tracking": {
+            "value": 2
+        },
+        "CityCenter.Class5.FontStyle.Color": {
+            "value": "#282828"
+        },
+        "CityCenter.Class5.FontStyle.OutlineColor": {
+            "value": "#fffffdb5"
+        },
+        "CityCenter.Class4.FontStyle.Color": {
+            "value": "#1e1e1e"
+        },
+        "CityCenter.Class4.FontStyle.OutlineColor": {
+            "value": "#fffffdb5"
+        },
+        "CityCenter.Class3.FontStyle.Color": {
+            "value": "#141414"
+        },
+        "CityCenter.Class3.FontStyle.OutlineColor": {
+            "value": "#fffffdb5"
+        },
+        "CityCenter.Class2.FontStyle.Color": {
+            "value": "#0a0a0a"
+        },
+        "CityCenter.Class2.FontStyle.OutlineColor": {
+            "value": "#fffffdb5"
+        },
+        "CityCenter.Class1.FontStyle.Color": {
+            "value": "#000000"
+        },
+        "CityCenter.Class1.FontStyle.OutlineColor": {
+            "value": "#fffffdb5"
+        },
+        "CityCenter.Hamlet.FontStyle.Color": {
+            "value": "#323232"
+        },
+        "CityCenter.Hamlet.FontStyle.OutlineColor": {
+            "value": "#fffffdb5"
+        },
+        "NeighborhoodInfo.FontStyle.0.Color": {
+            "value": "#3c3c3c"
+        },
+        "NeighborhoodInfo.FontStyle.0.OutlineColor": {
+            "value": "#fffffdb5"
+        },
+        "Microhood.FontStyle.Color": {
+            "value": ["ref", "NeighborhoodInfo.FontStyle.0.Color"]
+        },
+        "Microhood.FontStyle.OutlineColor": {
+            "value": ["ref", "NeighborhoodInfo.FontStyle.0.OutlineColor"]
+        },
+        "CityCenter.Class1.FontStyle.Tracking": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                10, 0,
+                12, 2]
+        },
+        "CityCenter.Class2.FontStyle.Tracking": {
+            "value": ["ref", "CityCenter.Class1.FontStyle.Tracking"]
+        },
+        "CityCenter.Class3.FontStyle.Tracking": {
+            "value": ["ref", "CityCenter.Class1.FontStyle.Tracking"]
+        },
+        "CityCenter.Class4.FontStyle.Tracking": {
+            "value": ["ref", "CityCenter.Class1.FontStyle.Tracking"]
+        },
+        "CityCenter.Class5.FontStyle.Tracking": {
+            "value": ["ref", "CityCenter.Class1.FontStyle.Tracking"]
+        },
+        "Microhood.FontStyle.Tracking": {
+            "value": ["ref", "CityCenter.Class1.FontStyle.Tracking"]
+        },
+        "NeighborhoodInfo.FontStyle.Tracking": {
+            "value": ["ref", "CityCenter.Class1.FontStyle.Tracking"]
+        },
+        "CityCenter.Hamlet.FontStyle.Tracking": {
+            "value": ["ref", "CityCenter.Class1.FontStyle.Tracking"]
+        },
+        "PointOfInterest.General.IconSize": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 22,
+                15, 22,
+                16, 24,
+                17, 24,
+                18, 25,
+                20, 25]
+        },
+        "PointOfInterest.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                5, 0,
+                5, 8,
+                8, 9,
+                12, 9,
+                13, 10,
+                15, 10,
+                16, 11,
+                20, 11]
+        },
+        "PointOfInterest.FontStyle.Color": {
+            "value": "#646464"
+        },
+        "PointOfInterest.FontStyle.OutlineColor": {
+            "value": "#ffffff96"
+        },
+        "PointOfInterest.IconText.DistanceFactor": {
+            "value": 1.5
+        },
+        "PointOfInterest.AnchorPoint.TopDown": {
+            "value": 0
+        },
+        "PointOfInterest.AnchorPoint.Tilt": {
+            "value": 0
+        },
+        "Transit.Stop.AnchorPoint.TopDown": {
+            "value": 1
+        },
+        "Transit.Stop.AnchorPoint.Tilt": {
+            "value": 0.5
+        },
+        "Transit.Stop.FontStyle.Color": {
+            "value": ["ref", "PointOfInterest.FontStyle.Color"]
+        },
+        "Transit.Stop.FontStyle.OutlineColor": {
+            "value": ["ref", "PointOfInterest.FontStyle.OutlineColor"]
+        },
+        "Transit.Stop.FontStyle.Size": {
+            "value": ["ref", "PointOfInterest.FontStyle.Size"]
+        },
+        "ExtrudedBuilding.Ambient.Factor": {
+            "value": 1
+        },
+        "ExtrudedBuilding.Diffuse.Factor": {
+            "value": 0.15
+        },
+        "ExtrudedBuilding.Specular.Factor": {
+            "value": 0
+        },
+        "Terrain.Ambient.Factor": {
+            "value": 0.63
+        },
+        "Terrain.Diffuse.Factor": {
+            "value": 1
+        },
+        "Polygon.Ambient.Factor": {
+            "value": 0.69
+        },
+        "Polygon.Diffuse.Factor": {
+            "value": 1
+        },
+        "Polygon.Land.Disable.Shading": {
+            "value": false
+        },
+        "Polygon.Water.Disable.Shading": {
+            "value": true
+        },
+        "ExtrudedBuilding.Roof.Color": {
+            "value": "#f2f2f2b3"
+        },
+        "ExtrudedBuilding.Wall.Color": {
+            "value": "#e3e7e8b3"
+        },
+        "ExtrudedBuilding.FakeAO.Height": {
+            "value": 3
+        },
+        "ExtrudedBuilding.FakeAO.Color": {
+            "value": "#e6f1f5bb"
+        },
+        "ExtrudedBuilding.Gradient.Color": {
+            "value": "#899aa158"
+        },
+        "ExtrudedBuildings.Color": {
+            "value": "#f5faff"
+        },
+        "ExtrudedBuildings.Emissive.Color": {
+            "value": "#c8c8c8"
+        },
+        "ExtrudedBuildings.Emissive.Intensity": {
+            "value": 0.1
+        },
+        "ExtrudedBuildings.Metalness": {
+            "value": 0.2
+        },
+        "ExtrudedBuildings.Line.Color": {
+            "value": "#dce4f5"
+        },
+        "Building.Color": {
+            "value": "#ffffffb3"
+        },
+        "BuildingOutline.Color": {
+            "value": "#dce5e8"
+        },
+        "BuildingInfo.FontStyle.Color": {
+            "value": "#6c878c"
+        },
+        "BuildingInfo.FontStyle.OutlineColor": {
+            "value": "#f1f6f763"
+        },
+        "BuildingInfo.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 11,
+                15, 11,
+                16, 12,
+                20, 12,
+                24, 14]
+        },
+        "BuildingAddress.FontStyle.Size": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                18, 0,
+                18, 10,
+                20, 10,
+                24, 12]
+        },
+        "BuildingAddress.FontStyle.Color": {
+            "value": "#7b9ca2"
+        },
+        "TrafficStyle.NoRoute.IconSize": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                11, 0,
+                11, 17,
+                12, 17,
+                13, 18,
+                14, 19,
+                15, 20,
+                16, 22,
+                18, 23,
+                20, 23]
+        },
+        "TrafficStyle.NoRoute.NormalColor": {
+            "value": "#84e8a6"
+        },
+        "TrafficStyle.NoRoute.NormalOutlineColor": {
+            "value": "#4bb46c"
+        },
+        "TrafficStyle.NoRoute.HighColor": {
+            "value": "#fcee81"
+        },
+        "TrafficStyle.NoRoute.HighOutlineColor": {
+            "value": "#f390a4"
+        },
+        "TrafficStyle.NoRoute.VeryHighColor": {
+            "value": "#ff7d90"
+        },
+        "TrafficStyle.NoRoute.VeryHighOutlineColor": {
+            "value": "#e60041"
+        },
+        "TrafficStyle.NoRoute.BlockingColor": {
+            "value": "#e60041"
+        },
+        "TrafficStyle.NoRoute.BlockingOutlineColor": {
+            "value": "#f1d3df"
+        },
+        "TrafficStyle.NoRoute.IncidentColor": {
+            "value": "#19191970"
+        },
+        "TrafficStyle.NoRoute.IncidentOutlineColor": {
+            "value": "#cfd8db"
+        },
+        "TrafficStyle.NoRoute.Incident.GapLength": {
+            "value": ["step", ["zoom"],
+                2.5,
+                8, 2.5,
+                9, 2.5,
+                10, 3,
+                11, 3.5,
+                12, 4,
+                13, 4.5,
+                14, 5,
+                15, 6,
+                16, 6.25,
+                17, 6.5,
+                18, 7,
+                19, 7.5,
+                20, 8,
+                21, 8.5,
+                22, 9,
+                23, 10,
+                24, 11]
+        },
+        "TrafficStyle.NoRoute.Incident.DashLength": {
+            "value": ["step", ["zoom"],
+                5,
+                8, 4.5,
+                9, 4.5,
+                10, 5,
+                11, 5.5,
+                12, 6,
+                13, 7,
+                14, 8,
+                15, 9,
+                16, 10,
+                17, 11,
+                18, 12,
+                19, 13,
+                20, 14,
+                21, 15,
+                22, 16,
+                23, 17,
+                24, 18]
+        },
+        "TrafficStyle.NoRoute.Category0.Width": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                7, 0,
+                7, 1,
+                8, 1.5,
+                9, 1.5,
+                10, 1.5,
+                11, 2.5,
+                12, 3.5,
+                13, 4,
+                14, 4.5,
+                15, 4.5,
+                16, 5.5,
+                17, 6,
+                18, 7,
+                19, 8.5,
+                20, 10]
+        },
+        "TrafficStyle.NoRoute.Category0.OutlineWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                7, 0,
+                7, 0.5,
+                8, 0.5,
+                8, 1]
+        },
+        "TrafficStyle.NoRoute.Category0.Offset": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                7, 0,
+                7, 2,
+                8, 2,
+                9, 2.5,
+                10, 2.5,
+                11, 3,
+                12, 4,
+                13, 5,
+                14, 6,
+                15, 7,
+                16, 9,
+                17, 8,
+                18, 15,
+                19, 22,
+                20, 34]
+        },
+        "TrafficStyle.NoRoute.Category0.RampOffset": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                7, 0,
+                7, 1,
+                9, 1,
+                10, 2,
+                11, 3,
+                12, 5,
+                13, 5,
+                14, 5.5,
+                15, 5.5,
+                16, 6,
+                17, 7,
+                18, 10,
+                19, 10]
+        },
+        "TrafficStyle.NoRoute.Category1.Width": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                10, 0,
+                10, 1,
+                11, 1.5,
+                12, 2,
+                13, 3,
+                14, 3.5,
+                15, 4,
+                16, 4.5,
+                17, 5,
+                18, 6,
+                19, 7.5,
+                20, 9]
+        },
+        "TrafficStyle.NoRoute.Category1.OutlineWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                10, 0,
+                10, 0.5,
+                11, 0.5,
+                11, 1]
+        },
+        "TrafficStyle.NoRoute.Category1.Offset": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                10, 0,
+                10, 2,
+                13, 3,
+                14, 4,
+                15, 4,
+                16, 4.5,
+                17, 6,
+                18, 13,
+                19, 15,
+                20, 23]
+        },
+        "TrafficStyle.NoRoute.Category1.RampOffset": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                10, 0,
+                10, 2,
+                11, 3,
+                12, 3.5,
+                13, 3.5,
+                14, 4,
+                15, 4.5,
+                16, 6,
+                17, 6,
+                18, 8,
+                19, 10,
+                20, 15]
+        },
+        "TrafficStyle.NoRoute.Category2.Width": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                13, 0,
+                13, 1.5,
+                13, 2,
+                14, 2.5,
+                15, 3,
+                16, 3.5,
+                17, 4,
+                18, 5,
+                19, 6.5,
+                20, 7.5]
+        },
+        "TrafficStyle.NoRoute.Category2.OutlineWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                13, 0,
+                13, 0.5,
+                14, 0.5,
+                14, 1]
+        },
+        "TrafficStyle.NoRoute.Category2.Offset": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                13, 0,
+                13, 3,
+                14, 3.5,
+                15, 5,
+                16, 6,
+                17, 6,
+                18, 11,
+                19, 12,
+                20, 22]
+        },
+        "TrafficStyle.NoRoute.Category2.RampOffset": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                13, 0,
+                13, 3,
+                14, 3.5,
+                15, 5,
+                16, 5.5,
+                17, 5.5,
+                18, 7,
+                19, 9,
+                20, 13]
+        },
+        "TrafficStyle.NoRoute.Category3.Width": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                14, 0,
+                14, 2.5,
+                15, 2.5,
+                16, 3,
+                17, 3.5,
+                18, 4,
+                19, 5,
+                20, 6]
+        },
+        "TrafficStyle.NoRoute.Category3.OutlineWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                14, 0,
+                14, 0.5,
+                15, 0.5,
+                15, 1]
+        },
+        "TrafficStyle.NoRoute.Category3.Offset": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                14, 0,
+                14, 3,
+                15, 4,
+                16, 5,
+                17, 6,
+                18, 10,
+                19, 12,
+                20, 20]
+        },
+        "TrafficStyle.NoRoute.Category3.RampOffset": {
+            "value": ["ref", "TrafficStyle.NoRoute.Category3.Offset"]
+        },
+        "TrafficStyle.NoRoute.Category4.Width": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                16, 0,
+                16, 2.5,
+                17, 3,
+                18, 3.5,
+                19, 4,
+                20, 5]
+        },
+        "TrafficStyle.NoRoute.Category4.OutlineWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                16, 0,
+                16, 0.5,
+                17, 0.5,
+                17, 1]
+        },
+        "TrafficStyle.NoRoute.Category4.Offset": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0,
+                16, 0,
+                16, 3,
+                17, 4,
+                18, 7,
+                19, 10,
+                20, 18]
+        },
+        "TrafficStyle.NoRoute.Category4.RampOffset": {
+            "value": ["ref", "TrafficStyle.NoRoute.Category4.Offset"]
+        },
+        "StreetSimpleLineZoomLevelSpan": {
+            "value": 1.0
+        }
+    }
+}

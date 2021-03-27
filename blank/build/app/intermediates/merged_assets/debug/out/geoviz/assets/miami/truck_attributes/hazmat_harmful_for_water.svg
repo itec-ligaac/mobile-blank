@@ -1,0 +1,25 @@
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="hazmat_harmful_for_water">
+<rect width="28" height="28" fill="white" fill-opacity="0.01"/>
+<g id="non-stretchable_items">
+<g id="truck-icon_base01">
+<circle id="outer-ring" cx="14" cy="14" r="13" fill="#B61819"/>
+<circle id="inner-ring" cx="14" cy="14" r="10" fill="white"/>
+</g>
+<path id="path3778 5" d="M8 13V14H20V13H8Z" fill="black"/>
+<path id="Vector" d="M14 18C14.5523 18 15 17.3284 15 16.5C15 15.6716 14.5523 15 14 15C13.4477 15 13 15.6716 13 16.5C13 17.3284 13.4477 18 14 18Z" fill="black"/>
+<path id="Vector_2" d="M10 15H9V18H10V15Z" fill="black"/>
+<path id="Vector_3" d="M12 15H11V18H12V15Z" fill="black"/>
+<path id="Vector_4" d="M19 15H18V18H19V15Z" fill="black"/>
+<path id="Vector_5" d="M17 15H16V18H17V15Z" fill="black"/>
+<path id="Vector_6" d="M18 16H10V17H18V16Z" fill="black"/>
+<path id="Vector_7" d="M14 12.5C11.019 12.5 8.5 11.126 8.5 9.5C8.5 7.874 11.019 6.5 14 6.5C16.981 6.5 19.5 7.874 19.5 9.5C19.5 11.126 16.981 12.5 14 12.5Z" fill="#FF6600"/>
+<path id="Vector_8" d="M14 7C16.946 7 19 8.317 19 9.5C19 10.683 16.946 12 14 12C11.053 12 9 10.683 9 9.5C9 8.317 11.053 7 14 7ZM14 6C10.686 6 8 7.567 8 9.5C8 11.433 10.686 13 14 13C17.312 13 20 11.433 20 9.5C20 7.567 17.312 6 14 6Z" fill="black"/>
+<path id="Vector_9" d="M9 21C9 20.447 9.447 20 10 20C10.553 20 11 20.447 11 21" stroke="#003399" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_10" d="M13 21C13 21.553 12.553 22 12 22C11.447 22 11 21.553 11 21" stroke="#003399" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_11" d="M13 21C13 20.447 13.447 20 14 20C14.553 20 15 20.447 15 21" stroke="#003399" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_12" d="M17 21C17 21.553 16.553 22 16 22C15.447 22 15 21.553 15 21" stroke="#003399" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_13" d="M17 21C17 20.447 17.447 20 18 20C18.553 20 19 20.447 19 21" stroke="#003399" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

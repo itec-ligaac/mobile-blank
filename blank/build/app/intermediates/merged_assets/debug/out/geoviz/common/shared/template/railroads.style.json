@@ -1,0 +1,131 @@
+{
+    "styles": [
+        {
+            "id": "rail_labels",
+            "styleSet": "tilezen_lines",
+            "when": ["ref", "Rail"],
+            "technique": "text",
+            "description": "railway labels",
+            "category": [
+                "case",
+                ["ref", "Is.Railroad"],
+                "rail-labels",
+                "rail-labels"
+            ],
+            "attr": {
+                "margin": ["ref", "defaultMargin"],
+                "far-threshold-range": 0.015,
+                "fade-time": 0.3,
+                "outline-style": "OutlineAndFill",
+                "outline-size": [
+                    "case",
+                    ["ref", "Is.Railroad"],
+                    ["ppi-scale", ["ref", "Rail.FontStyle.OutlineWidth"], ["ref", "ScalePpi.labels"]],
+                    ["ppi-scale", ["ref", "Rail.FontStyle.OutlineWidth"], ["ref", "ScalePpi.labels"]]
+                ],
+                "vertical-alignment": "Top",
+                "polyline-padding-px": 2,
+                "replaceable": true,
+                "new-label-spread-frames": 10,
+                "softdepth": ["ref", "softDepthThreshold"],
+                "outline-color": [
+                    "case",
+                    ["ref", "Is.Railroad"],
+                    ["ref", "Rail.FontStyle.OutlineColor"],
+                    ["ref", "Rail.FontStyle.OutlineColor"]
+                ],
+                "far-threshold": 0.85,
+                "color": [
+                    "case",
+                    ["ref", "Is.Railroad"],
+                    ["ref", "Rail.FontStyle.Color"],
+                    ["ref", "Rail.FontStyle.Color"]
+                ],
+                "size": [
+                    "case",
+                    ["ref", "Is.Railroad"],
+                    ["ppi-scale", ["ref", "Rail.FontStyle.Size"], ["ref", "ScalePpi.labels"]],
+                    ["ppi-scale", ["ref", "Rail.FontStyle.Size"], ["ref", "ScalePpi.labels"]]
+                ],
+                "font": ["ref", "defaultFont"],
+                "shape": "line",
+                "persisting-margin-reducing": ["ref", "defaultPersistingMarginReducing"]
+            }
+        },
+        {
+            "id": "rail_outlines",
+            "styleSet": "tilezen_lines",
+            "when": ["ref", "Rail"],
+            "technique": "line",
+            "description": "railway_outline",
+            "category": [
+                "case",
+                ["ref", "Is.Railroad"],
+                "rail-outline",
+                "rail-outline"
+            ],
+            "attr": {
+                "width": [
+                    "case",
+                    ["ref", "Is.Railroad"],
+                    ["world-ppi-scale", ["ref", "Rail.PolylineStyles.OutlineWidth"]],
+                    0
+                ],
+                "color": [
+                    "case",
+                    ["ref", "Is.Railroad"],
+                    ["ref", "Rail.PolylineStyles.OutlineColor"],
+                    ["ref", "Rail.PolylineStyles.OutlineColor"]
+                ],
+                "smooth-steps": ["make-vector", 4, 0.5]
+            }
+        },
+        {
+            "id": "rail_lines",
+            "styleSet": "tilezen_lines",
+            "when": ["ref", "Rail"],
+            "technique": "line",
+            "description": "railway",
+            "category": [
+                "case",
+                ["ref", "Is.Railroad"],
+                "rail",
+                "rail"
+            ],
+            "attr": {
+                "cap": "butt",
+                "dasharray": [
+                    "case",
+                    ["ref", "Is.Railroad"],
+                    [
+                        "make-vector",
+                        ["world-discrete-ppi-scale", ["ref", "Rail.PolylineStyles.DashArray1"]],
+                        ["world-discrete-ppi-scale", ["ref", "Rail.PolylineStyles.DashArray2"]],
+                        0,
+                        0
+                    ],
+                    null
+                ],
+                "fillcolor": [
+                    "case",
+                    ["ref", "Is.Railroad"],
+                    ["ref", "Rail.PolylineStyles.SecondaryColor"],
+                    ["ref", "Rail.PolylineStyles.SecondaryColor"]
+                ],
+                "width": [
+                    "case",
+                    ["ref", "Is.Railroad"],
+                    ["world-ppi-scale", ["ref", "Rail.PolylineStyles.Width"]],
+                    ["world-ppi-scale", ["ref", "Rail.PolylineStyles.Width"]]
+                ],
+                "color": [
+                    "case",
+                    ["ref", "Is.Railroad"],
+                    ["ref", "Rail.PolylineStyles.Color"],
+                    ["ref", "Rail.PolylineStyles.Color"]
+                ],
+                "smooth-steps": ["make-vector", 4, 0.5]
+            }
+        }
+    ]
+}

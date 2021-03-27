@@ -1,0 +1,55 @@
+{
+    "definitions": {
+        "Rail.PolylineStyles.SecondaryColor": {
+            "value": "#ffffff"
+        },
+        "Rail.PolylineStyles.OutlineWidth": {
+            "value": 3
+        },
+        "Rail.PolylineStyles.OutlineColor": {
+            "value": "#87878c"
+        },
+        "Rail.PolylineStyles.DashArray1": {
+            "value": 12
+        },
+        "Rail.PolylineStyles.DashArray2": {
+            "value": 10
+        },
+        "Rail.FontStyle.Size.Zero": {
+            "value": 0
+        },
+        "railLineWidthZoom": {
+            "value": ["world-ppi-scale", ["ref", "Rail.PolylineStyles.Width"]]
+        },
+        "railOutlineWidthZoom": {
+            "value": ["world-ppi-scale", ["ref", "Rail.PolylineStyles.OutlineWidth"]]
+        },
+        "railDashArray": {
+            "value": [
+                "make-vector",
+                ["world-discrete-ppi-scale", ["ref", "Rail.PolylineStyles.DashArray1"]],
+                ["world-discrete-ppi-scale", ["ref", "Rail.PolylineStyles.DashArray2"]],
+                0,
+                0
+            ]
+        },
+        "Rail.FontStyle.Color": {
+            "value": "#646464"
+        },
+        "Rail.FontStyle.OutlineColor": {
+            "value": "#ffffff78"
+        },
+        "Rail.FontStyle.OutlineWidth": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 1.25,
+                12, 1.25,
+                13, 1.375,
+                15, 1.375,
+                16, 1.5,
+                20, 1.5]
+        },
+        "Rail.FontStyle.Size": {
+            "value": 0
+        }
+    }
+}

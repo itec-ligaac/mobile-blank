@@ -1,0 +1,85 @@
+{
+    "styles": [
+        {
+            "styleSet": "tilezen_points",
+            "id": "earth_labels",
+            "when": [
+                "all",
+                ["ref", "Is.Earth"],
+                ["any", ["ref", "Is.Island"], ["ref", "Is.Continent"]]
+            ],
+            "technique": "text",
+            "category": [
+                "case",
+                ["ref", "Is.Island"],
+                "island-labels",
+                "continent-labels"
+            ],
+            "attr": {
+                "margin": ["ref", "defaultMargin"],
+                "persisting-margin-reducing": ["ref", "defaultPersistingMarginReducing"],
+                "far-threshold-range": 0.015,
+                "case-conversion": [
+                    "case",
+                    ["ref", "Is.Continent"],
+                    [
+                        "case",
+                        ["==", ["ref", "ContinentLabel.FontStyle.AllCaps"], true],
+                        "makeUpperCase",
+                        "keepOriginal"
+                    ],
+                    null
+                ],
+                "fade-time": 0.3,
+                "outline-style": "OutlineAndFill",
+                "break-line": [
+                    "case",
+                    ["ref", "Is.Island"],
+                    true,
+                    null
+                ],
+                "outline-size": [
+                    "case",
+                    ["ref", "Is.Island"],
+                    ["ppi-scale", ["ref", "IslandInfo.FontStyle.OutlineWidth"], ["ref", "ScalePpi.labels"]],
+                    ["ppi-scale", ["ref", "ContinentLabel.FontStyle.OutlineWidth"], ["ref", "ScalePpi.labels"]]
+                ],
+                "replaceable": true,
+                "new-label-spread-frames": 10,
+                "leading-space": [
+                    "case",
+                    ["ref", "Is.Island"],
+                    ["ref", "IslandInfo.FontStyle.Leading"],
+                    ["ref", "ContinentLabel.FontStyle.Leading"]
+                ],
+                "tracking-space": [
+                    "case",
+                    ["ref", "Is.Island"],
+                    ["ref", "IslandInfo.FontStyle.Tracking"],
+                    ["ref", "ContinentLabel.FontStyle.Tracking"]
+                ],
+                "outline-color": [
+                    "case",
+                    ["ref", "Is.Island"],
+                    ["ref", "IslandInfo.FontStyle.OutlineColor"],
+                    ["ref", "ContinentLabel.FontStyle.OutlineColor"]
+                ],
+                "far-threshold": 0.85,
+                "color": [
+                    "case",
+                    ["ref", "Is.Island"],
+                    ["ref", "IslandInfo.FontStyle.Color"],
+                    ["ref", "ContinentLabel.FontStyle.Color"]
+                ],
+                "size": [
+                    "case",
+                    ["ref", "Is.Island"],
+                    ["ppi-scale", ["ref", "IslandInfo.FontStyle.Size"], ["ref", "ScalePpi.labels"]],
+                    ["ppi-scale", ["ref", "ContinentLabel.FontStyle.Size"], ["ref", "ScalePpi.labels"]]
+                ],
+                "font": ["ref", "defaultFont"],
+                "shape": "point"
+            }
+        }
+    ]
+}

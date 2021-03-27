@@ -1,0 +1,13 @@
+[
+    { "group": "traffic_incidents", "category": "traffic-incidents-outline" },
+    { "group": "traffic_flow", "category": "traffic-outline" },
+    { "group": "traffic_flow", "category": "traffic" },
+    { "group": "traffic_flow", "category": "traffic-normal" },
+    { "group": "traffic_flow", "category": "traffic-high" },
+    { "group": "traffic_flow", "category": "traffic-very-high" },
+    { "group": "traffic_incidents", "category": "traffic-incidents" },
+    { "group": "traffic_flow", "category": "traffic-blocking-outline" },
+    { "group": "traffic_flow", "category": "traffic-blocking" },
+    { "group": "traffic_incidents", "category": "traffic-incidents-closure-outline" },
+    { "group": "traffic_incidents", "category": "traffic-incidents-closure" }
+]

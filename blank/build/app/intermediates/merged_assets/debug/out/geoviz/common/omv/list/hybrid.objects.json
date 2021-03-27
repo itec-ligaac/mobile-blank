@@ -1,0 +1,18 @@
+{
+    "clear": {},
+    "outdoor": {},
+    "geo": {},
+    "geohalo": {},
+    "spacebackground": {},
+    "depthsky": {},
+    "geofog": {},
+    "northpole": {},
+    "southpole": {},
+    "tilezen_points": { "factory": "tilezen.point" },
+    "tilezen_building_addresses": { "factory": "tilezen.building_address" },
+    "tilezen_lines": { "factory": "tilezen.line" },
+    "tilezen_road_shield_labels": { "factory": "tilezen.road_shield_label" },
+    "route": { "factory": "geojson.polylines" },
+    "traffic_on_route": { "factory": "geojson.polylines" },
+    "labels": {}
+}

@@ -1,0 +1,3 @@
+{
+    "inherit": "geoviz/oslo/omv-satellite-traffic/traffic.hybrid.day.scene.json"
+}

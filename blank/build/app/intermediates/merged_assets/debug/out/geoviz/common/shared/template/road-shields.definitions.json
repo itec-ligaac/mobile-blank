@@ -1,0 +1,113 @@
+{
+    "definitions": {
+        "RoadShield.Class0": {
+            "value": ["==", ["get", "display_class"], "class0"]
+        },
+        "RoadShield.Class1": {
+            "value": ["==", ["get", "display_class"], "class1"]
+        },
+        "RoadShield.Class2": {
+            "value": ["==", ["get", "display_class"], "class2"]
+        },
+        "RoadShield.Class3": {
+            "value": ["==", ["get", "display_class"], "class3"]
+        },
+        "RoadShield.Class4": {
+            "value": ["==", ["get", "display_class"], "class4"]
+        },
+        "RoadShield.ClassNone": {
+            "value": ["==", ["get", "display_class"], "classnone"]
+        },
+        "RoadShield.Icon.Brightness": {
+            "value": 1
+        },
+        "RoadShield.Text.Brightness": {
+            "value": 1
+        },
+        "RoadShield.IconShadow.Enabled": {
+            "value": false
+        },
+        "RoadShield.Class0.Opacity": {
+            "value": ["step", ["zoom"],
+                0,
+                5, 1]
+        },
+        "RoadShield.Class1.Opacity": {
+            "value": ["step", ["zoom"],
+                0,
+                8, 1]
+        },
+        "RoadShield.Class2.Opacity": {
+            "value": ["step", ["zoom"],
+                0,
+                10, 1]
+        },
+        "RoadShield.Class3.Opacity": {
+            "value": ["step", ["zoom"],
+                0,
+                12, 1]
+        },
+        "RoadShield.Class4.Opacity": {
+            "value": ["step", ["zoom"],
+                0,
+                14, 1]
+        },
+        "RoadShield.ClassNone.Opacity": {
+            "value": ["step", ["zoom"],
+                0,
+                5, 1]
+        },
+        "RoadShield.IconText.Opacity": {
+            "value": [
+                "case",
+                ["ref", "RoadShield.Class0"],
+                ["ref", "RoadShield.Class0.Opacity"],
+                ["ref", "RoadShield.Class1"],
+                ["ref", "RoadShield.Class1.Opacity"],
+                ["ref", "RoadShield.Class2"],
+                ["ref", "RoadShield.Class2.Opacity"],
+                ["ref", "RoadShield.Class3"],
+                ["ref", "RoadShield.Class3.Opacity"],
+                ["ref", "RoadShield.Class4"],
+                ["ref", "RoadShield.Class4.Opacity"],
+                ["ref", "RoadShield.ClassNone"],
+                ["ref", "RoadShield.ClassNone.Opacity"],
+                null
+            ]
+        },
+        "RoadShield.Margin": {
+            "value": ["step", ["zoom"],
+                90,
+                8, 90,
+                9, 80,
+                10, 70,
+                11, 65,
+                14, 60,
+                16, 50,
+                18, 25]
+        },
+        "RoadShield.Check.Margin": {
+            "value": ["step", ["zoom"],
+                35,
+                8, 50,
+                11, 35,
+                15, 30]
+        },
+        "RoadShield.Persisting.Margin.Reducing": {
+            "value": ["step", ["zoom"],
+                15,
+                11, 10]
+        },
+        "RoadShield.Font": {
+            "value": ["ref", "defaultFont"]
+        },
+        "RoadShield.FontStyle.Size": {
+            "value": 8
+        },
+        "RoadShield.FontStyle.SizeFactor": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                12, 1,
+                20, 1.5]
+        }
+    }
+}

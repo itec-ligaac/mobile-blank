@@ -1,0 +1,13 @@
+{
+    "definitions": {
+        "GlobalCopyright": {
+            "value": "2013 DigitalGlobe"
+        },
+        "Northpole.Color": {
+            "value": "#10304a"
+        },
+        "Southpole.Color": {
+            "value": "#ffffff"
+        }
+    }
+}

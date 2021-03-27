@@ -1,0 +1,18 @@
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="trailer_restriction_usa">
+<rect width="28" height="28" fill="white" fill-opacity="0.01"/>
+<g id="non-stretchable_items">
+<g id="truck-icon_base01">
+<circle id="outer-ring" cx="14" cy="14" r="13" fill="#B61819"/>
+<circle id="inner-ring" cx="14" cy="14" r="10" fill="white"/>
+</g>
+<path id="Vector" d="M20 17.5C20 17.775 19.775 18 19.5 18H18.5C18.225 18 18 17.775 18 17.5V16.5C18 16.225 18.225 16 18.5 16H19.5C19.775 16 20 16.225 20 16.5V17.5Z" fill="black"/>
+<path id="Vector_2" d="M15 17.5C15 17.775 14.775 18 14.5 18H13.5C13.225 18 13 17.775 13 17.5V16.5C13 16.225 13.225 16 13.5 16H14.5C14.775 16 15 16.225 15 16.5V17.5Z" fill="black"/>
+<path id="Vector_3" d="M11 10V17H12V16H13V15H15V16H16V17H17V16H18V15H20V16H21V17H22V10H11Z" fill="black"/>
+<path id="Vector_4" d="M7 17.5C7 17.775 6.775 18 6.5 18H5.5C5.225 18 5 17.775 5 17.5V16.5C5 16.225 5.225 16 5.5 16H6.5C6.775 16 7 16.225 7 16.5V17.5Z" fill="black"/>
+<path id="Vector_5" d="M9 10V17H8V16H7V15H5V16H4.2C4.07 15.359 4 14.69 4 14C4 12.58 4.3 11.221 4.84 10H9Z" fill="black"/>
+<path id="Vector_6" d="M11.969 16H8.03101V17H11.969V16Z" fill="black"/>
+<path id="Vector_7" d="M22.4125 20.911L6.91357 5.41211L5.4124 6.91328L20.9113 22.4122L22.4125 20.911Z" fill="#B61819"/>
+</g>
+</g>
+</svg>

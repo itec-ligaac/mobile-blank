@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="%d" height="220" version="1.1"
+xmlns="http://www.w3.org/2000/svg">
+
+<path d="M160 10 
+    l %d   0 
+    c 150   0  150  200   0  200
+    l-%d   0 
+    c-150   0 -150 -200   0 -200"
+    fill="none"
+    stroke="%s"
+    stroke-width="20"/>
+
+<text text-anchor="middle" x="%d" y="175" 
+    font-size="200" fill="%s" >
+    %s
+</text>
+</svg>%c

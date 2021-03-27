@@ -1,0 +1,14 @@
+<svg width="28" height="35" viewBox="0 0 28 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="length_restriction">
+<rect width="28" height="35" fill="white" fill-opacity="0.01"/>
+<g id="non-stretchable_items">
+<g id="truck-icon_base01">
+<circle id="outer-ring" cx="14" cy="21" r="13" fill="#B61819"/>
+<circle id="inner-ring" cx="14" cy="21" r="10" fill="white"/>
+</g>
+<path id="symbol03" d="M6 24.5L9 22V27L6 24.5Z" fill="black"/>
+<path id="symbol02" d="M22 24.5L19 22V27L22 24.5Z" fill="black"/>
+<path id="symbol01" d="M20 24H9V25H20V24Z" fill="black"/>
+</g>
+</g>
+</svg>
