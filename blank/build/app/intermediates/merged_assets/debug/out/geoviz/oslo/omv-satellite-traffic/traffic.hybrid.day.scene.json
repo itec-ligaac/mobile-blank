@@ -1,0 +1,10 @@
+{
+  "inherit": ["../../miami/omv-satellite-traffic/scene.json", "../assets/assets.hybrid.day.json"],
+  "extends": [
+    "../../miami/omv-satellite-traffic/common.json",
+    "../../miami/schemes/normal.day.definitions.json",
+    "../schemes/normal.day.definitions.json",
+    "../schemes/satellite.day.definitions.json",
+    "../schemes/hybrid.day.definitions.json"
+  ]
+}

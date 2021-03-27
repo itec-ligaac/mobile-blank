@@ -1,0 +1,9 @@
+{
+    "inherit": ["scene.json", "../assets/assets.night.json"],
+    "extends": [
+        "common.json",
+        "../schemes/normal.day.definitions.json",
+        "../schemes/normal.night.definitions.json",
+        "../schemes/normal.night.grey.definitions.json"
+    ]
+}

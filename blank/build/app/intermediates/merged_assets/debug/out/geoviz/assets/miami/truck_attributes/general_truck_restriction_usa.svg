@@ -1,0 +1,15 @@
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="general_truck_restriction_usa">
+<rect width="28" height="28" fill="white" fill-opacity="0.01"/>
+<g id="non-stretchable_items">
+<g id="truck-icon_base01">
+<circle id="outer-ring" cx="14" cy="14" r="13" fill="#B61819"/>
+<circle id="inner-ring" cx="14" cy="14" r="10" fill="white"/>
+</g>
+<path id="Vector" d="M10 17.5C10 17.775 9.775 18 9.5 18H8.5C8.225 18 8 17.775 8 17.5V16.5C8 16.225 8.225 16 8.5 16H9.5C9.775 16 10 16.225 10 16.5V17.5Z" fill="black"/>
+<path id="Vector_2" d="M19 17.5C19 17.775 18.775 18 18.5 18H17.5C17.225 18 17 17.775 17 17.5V16.5C17 16.225 17.225 16 17.5 16H18.5C18.775 16 19 16.225 19 16.5V17.5Z" fill="black"/>
+<path id="Vector_3" d="M11 10V14H10V11H7L6 13V17H7V16H8V15H10V16H11V17H16V16H17V15H19V16H20V17H21V10H11ZM9 14H6.578L7.516 12H9V14Z" fill="black"/>
+<path id="Vector_4" d="M23.4127 21.7349L6.09021 4.41238L4.41297 6.08962L21.7355 23.4122L23.4127 21.7349Z" fill="#B61819"/>
+</g>
+</g>
+</svg>

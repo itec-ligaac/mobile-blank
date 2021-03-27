@@ -1,0 +1,11 @@
+{
+    "assets": {
+        "paths": [
+            "assets/miami/tmc/day",
+            "assets/miami/various/one_way_arrow",
+            "assets/miami/city_center/hybrid",
+            "assets/miami/poi/night_grey",
+            "assets/miami/road_shield"
+        ]
+    }
+}

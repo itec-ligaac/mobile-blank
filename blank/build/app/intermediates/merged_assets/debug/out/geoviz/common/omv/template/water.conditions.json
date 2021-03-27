@@ -1,0 +1,34 @@
+{
+    "definitions": {
+        "Is.Canal": {
+            "value": ["==", ["get", "kind"], "canal"]
+        },
+        "Is.River": {
+            "value": ["==", ["get", "kind"], "river"]
+        },
+        "Is.Intermittent.River": {
+            "value": ["get", "intermittent"]
+        },
+        "Is.Bay": {
+            "value": ["==", ["get", "kind"], "bay"]
+        },
+        "Is.Lake": {
+            "value": ["==", ["get", "kind"], "lake"]
+        },
+        "Is.Ocean": {
+            "value": ["==", ["get", "kind"], "ocean"]
+        },
+        "Is.Sea": {
+            "value": ["==", ["get", "kind"], "sea"]
+        },
+        "Is.Fjord": {
+            "value": ["==", ["get", "kind"], "fjord"]
+        },
+        "Is.Strait": {
+            "value": ["==", ["get", "kind"], "strait"]
+        },
+        "Is.Water": {
+            "value": ["==", ["get", "$layer"], "water"]
+        }
+    }
+}

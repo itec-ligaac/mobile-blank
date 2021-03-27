@@ -1,0 +1,16 @@
+{
+    "definitions": {
+        "ContinentLabel.FontStyle.Leading": {
+            "value": 2
+        },
+        "ContinentLabel.FontStyle.Tracking": {
+            "value": 0
+        },
+        "IslandInfo.FontStyle.Leading": {
+            "value": 0
+        },
+        "IslandInfo.FontStyle.Tracking": {
+            "value": 0
+        }
+    }
+}

@@ -1,0 +1,18 @@
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="hazmat_other_usa">
+<rect width="28" height="28" fill="white" fill-opacity="0.01"/>
+<g id="non-stretchable_items">
+<g id="truck-icon_base03" clip-path="url(#clip0)">
+<path id="Vector" d="M26.9993 14.0002L13.9993 1.00018L0.999942 13.9995L14 26.9995L26.9993 14.0002Z" fill="black"/>
+<path id="Vector_2" d="M14.0006 24.9995L25.0002 13.9998L14.0006 3.00017L3.00095 13.9998L14.0006 24.9995Z" fill="#FF6600"/>
+</g>
+<path id="Vector_3" d="M11.916 10.836H12.744V17.164H11.916V14.158H8.99997V17.164H8.17297V10.836H8.99997V13.41H11.916V10.836Z" fill="black"/>
+<path id="Vector_4" d="M14.274 10.836H15.183L17.055 14.661L18.918 10.836H19.827V17.164H19.016V12.25L17.387 15.543H16.66L15.085 12.339V17.164H14.274V10.836Z" fill="black"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="26" height="26" fill="white" transform="translate(1 1)"/>
+</clipPath>
+</defs>
+</svg>

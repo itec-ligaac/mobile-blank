@@ -1,0 +1,69 @@
+{
+    "definitions": {
+        "TrafficStyle.NoRoute.BlockingOutlineColor": {
+            "value": ["ref", "TrafficStyle.NoRoute.OutlineColor"]
+        },
+        "TrafficStyle.NoRoute.VeryHighOutlineColor": {
+            "value": ["ref", "TrafficStyle.NoRoute.OutlineColor"]
+        },
+        "TrafficStyle.NoRoute.HighOutlineColor": {
+            "value": ["ref", "TrafficStyle.NoRoute.OutlineColor"]
+        },
+        "TrafficStyle.NoRoute.NormalOutlineColor": {
+            "value": ["ref", "TrafficStyle.NoRoute.OutlineColor"]
+        },
+        "Icon.Traffic.Brightness": {
+            "value": 1
+        },
+        "IconShadow.Enabled.Traffic": {
+            "value": false
+        },
+        "TrafficOffsetDirection": {
+            "value": ["match", ["get", "drives_on_left"],
+                1, -1,
+                1]
+        },
+        "TrafficStyle.NoRoute.Incident.GapLength": {
+            "value": ["step", ["zoom"],
+                4,
+                8, 3,
+                9, 3,
+                10, 4,
+                11, 4.5,
+                12, 5,
+                13, 5.5,
+                14, 6.5,
+                15, 7.5,
+                16, 8,
+                17, 8.5,
+                18, 9,
+                19, 10.5,
+                20, 12,
+                21, 13,
+                22, 14,
+                23, 15,
+                24, 16]
+        },
+        "TrafficStyle.NoRoute.Incident.DashLength": {
+            "value": ["step", ["zoom"],
+                7,
+                8, 7,
+                9, 7,
+                10, 9,
+                11, 10,
+                12, 11,
+                13, 13,
+                14, 16,
+                15, 18,
+                16, 20,
+                17, 22,
+                18, 24,
+                19, 26,
+                20, 28,
+                21, 29,
+                22, 30,
+                23, 31,
+                24, 32]
+        }
+    }
+}

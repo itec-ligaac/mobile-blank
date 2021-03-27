@@ -1,0 +1,16 @@
+<svg width="28" height="36" viewBox="0 0 28 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="weight_per_axle_restriction">
+<rect width="28" height="36" fill="white" fill-opacity="0.01"/>
+<g id="non-stretchable_items">
+<g id="truck-icon_base01">
+<circle id="outer-ring" cx="14" cy="22" r="13" fill="#B61819"/>
+<circle id="inner-ring" cx="14" cy="22" r="10" fill="white"/>
+</g>
+<path id="Vector" d="M14.0005 25L12 22H16L14.0005 25Z" fill="black"/>
+<path id="Vector_2" d="M11 28.5C11 28.775 10.775 29 10.5 29H9.5C9.225 29 9 28.775 9 28.5V25.5C9 25.225 9.225 25 9.5 25H10.5C10.775 25 11 25.225 11 25.5V28.5Z" fill="black"/>
+<path id="Vector_3" d="M19 28.5C19 28.775 18.775 29 18.5 29H17.5C17.225 29 17 28.775 17 28.5V25.5C17 25.225 17.225 25 17.5 25H18.5C18.775 25 19 25.225 19 25.5V28.5Z" fill="black"/>
+<path id="Vector_4" d="M14 28.5C14.8284 28.5 15.5 27.8284 15.5 27C15.5 26.1716 14.8284 25.5 14 25.5C13.1716 25.5 12.5 26.1716 12.5 27C12.5 27.8284 13.1716 28.5 14 28.5Z" fill="black"/>
+<path id="Vector_5" d="M17 26.5H11V27.5H17V26.5Z" fill="black"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,16 @@
+{
+    "background" : {"alwaysShowRootLevel" : true, "lodErrorFactor" : 0.5},
+    "northpole" : { "alwaysShowRootLevel" : true, "ignoreMaximumLevelTileCount" : true, "lodErrorFactor" : 0.5 },
+    "southpole" : { "alwaysShowRootLevel" : true, "ignoreMaximumLevelTileCount" : true, "lodErrorFactor" : 0.5 },
+    "tilezen_points" : { "alwaysShowRootLevel" : true, "lodErrorFactor" : 0.5 },
+    "tilezen_building_addresses" : { "minZoom" : 17 },
+    "tilezen_lines" : { "alwaysShowRootLevel" : true, "lodErrorFactor" : 0.5 },
+    "tilezen_roads" : { "alwaysShowRootLevel" : true, "lodErrorFactor" : 0.5 },
+    "tilezen_road_shield_labels" : { "alwaysShowRootLevel" : true, "minZoom" : 7.5, "lodErrorFactor" : 0.5 },
+    "tilezen_polygons" : { "alwaysShowRootLevel" : true, "distanceToEyeErrorFactor" : 0.0, "lodErrorFactor" : 0.5 },
+    "tilezen_building_footprints" : { "minZoom" : 16 },
+    "tilezen_building_footprints_outlines" : { "minZoom" : 16 },
+    "tilezen_volumes" : { "minZoom" : 17 },
+    "landmarks": { "alwaysShowRootLevel" : true, "minZoom" : 17 },
+    "labels" : { "alwaysShowRootLevel" : true }
+}
