@@ -1,0 +1,99 @@
+{
+    "definitions": {
+        "Is.Low.Emission.Zone": {
+            "value": ["==", ["get", "kind"], "low_emission_zone"]
+        },
+        "Is.National.Park": {
+            "value": [
+                "any",
+                ["==", ["get", "kind"], "national_park"],
+                ["==", ["get", "kind"], "nature_reserve"]
+            ]
+        },
+        "Is.Forest": {
+            "value": ["==", ["get", "kind"], "forest"]
+        },
+        "Is.Theme.Park": {
+            "value": ["==", ["get", "kind"], "theme_park"]
+        },
+        "Is.Zoo": {
+            "value": ["==", ["get", "kind"], "zoo"]
+        },
+        "Is.Cemetery": {
+            "value": ["==", ["get", "kind"], "cemetery"]
+        },
+        "Is.Hospital": {
+            "value": ["==", ["get", "kind"], "hospital"]
+        },
+        "Is.Park": {
+            "value": ["==", ["get", "kind"], "park"]
+        },
+        "Is.Pedestrian": {
+            "value": ["==", ["get", "kind"], "pedestrian"]
+        },
+        "Is.Airport": {
+            "value": [
+                "any",
+                ["==", ["get", "kind"], "aerodrome"],
+                ["==", ["get", "kind"], "airfield"]
+            ]
+        },
+        "Is.Harbour": {
+            "value": ["==", ["get", "kind"], "harbour"]
+        },
+        "Is.Industrial": {
+            "value": ["==", ["get", "kind"], "industrial"]
+        },
+        "Is.Glacier": {
+            "value": ["==", ["get", "kind"], "glacier"]
+        },
+        "Is.Water.Park": {
+            "value": ["==", ["get", "kind"], "water_park"]
+        },
+        "Is.Railyard": {
+            "value": ["==", ["get", "kind"], "railway"]
+        },
+        "Is.Golf.Course": {
+            "value": ["==", ["get", "kind"], "golf_course"]
+        },
+        "Is.Reservation": {
+            "value": ["==", ["get", "kind"], "reservation"]
+        },
+        "Is.Military.Base": {
+            "value": ["==", ["get", "kind"], "military"]
+        },
+        "Is.Allotment": {
+            "value": ["==", ["get", "kind"], "allotments"]
+        },
+        "Is.Sports.Centre": {
+            "value": ["==", ["get", "kind"], "sports_centre"]
+        },
+        "Is.Commercial": {
+            "value": ["==", ["get", "kind"], "commercial"]
+        },
+        "Is.Beach": {
+            "value": ["==", ["get", "kind"], "beach"]
+        },
+        "Is.University": {
+            "value": ["==", ["get", "kind"], "university"]
+        },
+        "Is.Parking": {
+            "value": ["==", ["get", "kind"], "parking"]
+        },
+        "Is.Runway": {
+            "value": ["==", ["get", "kind"], "runway"]
+        },
+        "Is.Urban": {
+            "value": ["==", ["get", "kind"], "urban"]
+        },
+        "Is.Urban.Area": {
+            "value": ["==", ["get", "kind"], "urban_area"]
+        },
+        "Is.Landuse": {
+            "value": ["==", ["get", "$layer"], "landuse"]
+        },
+        "Is.Landuse.Label": {
+            "value": ["==", ["get", "$layer"], "landuse"]
+        }
+    }
+}

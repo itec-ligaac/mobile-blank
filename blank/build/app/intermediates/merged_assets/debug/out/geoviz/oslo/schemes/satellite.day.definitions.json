@@ -1,0 +1,35 @@
+{
+    "definitions": {
+        "GlobalCopyright": {
+            "value": "2013 DigitalGlobe"
+        },
+        "Northpole.Color": {
+            "value": "#10304a"
+        },
+        "Southpole.Color": {
+            "value": "#ffffff"
+        },
+        "HaloLowOrbitSize": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                3, 1.07,
+                6, 1.08,
+                8, 1.1]
+        },
+        "HaloHighOrbitSize": {
+            "value": ["interpolate", ["linear"], ["zoom"],
+                0, 0.96,
+                1, 0.98,
+                1.5, 0.98,
+                2, 0.99]
+        },
+        "Fog.DistanceColor": {
+            "value": "#b2d9ff"
+        },
+        "HaloHorizonColor": {
+            "value": "#c8e1fa"
+        },
+        "HaloSkyColor": {
+            "value": "#007dff"
+        }
+    }
+}

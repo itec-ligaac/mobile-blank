@@ -1,0 +1,15 @@
+{
+    "styles": [
+/*soft-depth is disabled until further notice
+        {
+            "styleSet": "background",
+            "technique": "polygon",
+            "description": "offscreen-depth",
+            "category": "offscreen-depth",
+            "attr": {
+                "enforce-ztest": true
+            }
+        }
+*/
+    ]
+}

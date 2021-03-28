@@ -1,0 +1,13 @@
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="hazmat_permit_required">
+<rect width="28" height="28" fill="white" fill-opacity="0.01"/>
+<g id="non-stretchable_items">
+<g id="truck-icon_base01">
+<circle id="outer-ring" cx="14" cy="14" r="13" fill="#B61819"/>
+<circle id="inner-ring" cx="14" cy="14" r="10" fill="white"/>
+</g>
+<path id="Vector" d="M13.9995 21.7929L21.7925 14L13.9995 6.20705L6.20658 14L13.9995 21.7929Z" fill="#FF6600"/>
+<path id="Vector_2" d="M14 6.914L21.086 14L14 21.086L6.914 14L14 6.914ZM14 5.5L5.5 14L14 22.5L22.5 14L14 5.5Z" fill="black"/>
+</g>
+</g>
+</svg>

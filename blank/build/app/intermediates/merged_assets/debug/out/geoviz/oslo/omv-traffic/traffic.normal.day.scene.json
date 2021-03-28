@@ -1,0 +1,34 @@
+{
+    "inherit": ["../../common/omv/scene.json", "../assets/assets.day.json"],
+    "objects": {
+        "$concat": [
+            {
+                "$ref": "../../common/omv/scene.json#/objects"
+            },
+            {
+                "$ref": "../../common/omv-traffic/traffic.scene.json#/objects"
+            }
+        ]
+    },
+    "bucketPriorities": {
+        "$insert": {
+            "before": {
+                "group": "tilezen_lines",
+                "category": "state-border-outline"
+            },
+            "into": {
+                "$ref": "../../common/omv/scene.json#/bucketPriorities"
+            },
+            "value": {
+                "$ref": "../../common/omv-traffic/traffic.scene.json#/bucketPriorities"
+            }
+        }
+    },
+    "extends": [
+        "../../miami/omv-traffic/common.json",
+        "../../common/shared/template/polecaps.definitions.json",
+        "../../common/shared/template/background.definitions.json",
+        "../../miami/schemes/normal.day.definitions.json",
+        "../schemes/normal.day.definitions.json"
+    ]
+}

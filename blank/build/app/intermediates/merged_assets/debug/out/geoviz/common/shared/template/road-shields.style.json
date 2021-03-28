@@ -1,0 +1,148 @@
+{
+    "styles": [
+        {
+            "id": "road_shield_labels",
+            "styleSet": "tilezen_road_shield_labels",
+            "when": [
+                "all",
+                [
+                    "any",
+                    ["ref", "RoadShield.Class0"],
+                    ["ref", "RoadShield.Class1"],
+                    ["ref", "RoadShield.Class2"],
+                    ["ref", "RoadShield.Class3"],
+                    ["ref", "RoadShield.Class4"],
+                    ["ref", "RoadShield.ClassNone"]
+                ],
+                ["ref", "roadLookupIconName"],
+                [
+                    "<=",
+                    ["length", ["get", "name"]],
+                    ["ref", "roadLookupMaxNumberChars"]
+                ]
+            ],
+            "technique": "icontext",
+            "category": [
+                "case",
+                ["ref", "RoadShield.Class0"],
+                "road-shields0-labels",
+                ["ref", "RoadShield.Class1"],
+                "road-shields1-labels",
+                ["ref", "RoadShield.Class2"],
+                "road-shields2-labels",
+                ["ref", "RoadShield.Class3"],
+                "road-shields3-labels",
+                ["ref", "RoadShield.Class4"],
+                "road-shields4-labels",
+                ["ref", "RoadShield.ClassNone"],
+                "road-shields-labels",
+                null
+            ],
+            "attr": {
+                "iconMinZoomLevel": ["ref", "StreetMinZoomLevel"],
+                "textMinZoomLevel": ["ref", "StreetMinZoomLevel"],
+                "highlightable": false,
+                "anchor-order-preference": "FurthestFromExit",
+                "anchor-point-density": 10,
+                "margin": ["ref", "RoadShield.Margin"],
+                "check-margin": ["ref", "defaultMargin"],
+                "persisting-margin-reducing": ["ref", "defaultPersistingMarginReducing"],
+                "far-threshold": 0.8,
+                "far-threshold-range": 0.025,
+                "new-label-spread-frames": 10,
+                "text-dx": 0,
+                "text-dy": 0,
+                "icon-opacity": ["ref", "RoadShield.IconText.Opacity"],
+                "text-opacity": ["ref", "RoadShield.IconText.Opacity"],
+                "icon-shadow-enabled": ["ref", "RoadShield.IconShadow.Enabled"],
+                "icon-shadow-color": ["ref", "IconShadow.Color"],
+                "icon-shadow-blur-radius": ["ref", "IconShadow.BlurRadius"],
+                "icon-shadow-size-increment": ["ref", "IconShadow.SizeIncrement"],
+                "icon-shadow-shear-factor-x": ["ref", "IconShadow.ShearFactor.X"],
+                "icon-shadow-shear-factor-y": ["ref", "IconShadow.ShearFactor.Y"],
+                "icon-shadow-dx": ["ref", "IconShadow.Distance.X"],
+                "icon-shadow-dy": ["-", ["ref", "IconShadow.Distance.Y"]],
+                "text-color": ["ref", "roadLookupFontColor"],
+                "font": ["ref", "RoadShield.Font"],
+                "font-size": [
+                    "ppi-scale",
+                    ["*", ["ref", "RoadShield.FontStyle.Size"], ["ref", "RoadShield.FontStyle.SizeFactor"]],
+                    ["ref", "ScalePpi.labels"]
+                ],
+                "image": ["concat", ["ref", "roadLookupIconName"], ".svg"],
+                "text-brightness": ["ref", "RoadShield.Text.Brightness"],
+                "icon-brightness": ["ref", "RoadShield.Icon.Brightness"],
+                "icon-width": [
+                    "case",
+                    [
+                        "==",
+                        ["length", ["get", "name"]],
+                        4
+                    ],
+                    [
+                        "ppi-scale",
+                        [
+                            "*",
+                            ["*", ["ref", "roadLookupIconSizeWidth"], 1.25],
+                            ["ref", "RoadShield.FontStyle.SizeFactor"]
+                        ],
+                        ["ref", "ScalePpi.labels"]
+                    ],
+                    [
+                        "==",
+                        ["length", ["get", "name"]],
+                        5
+                    ],
+                    [
+                        "ppi-scale",
+                        [
+                            "*",
+                            ["*", ["ref", "roadLookupIconSizeWidth"], 1.5],
+                            ["ref", "RoadShield.FontStyle.SizeFactor"]
+                        ],
+                        ["ref", "ScalePpi.labels"]
+                    ],
+                    [
+                        "==",
+                        ["length", ["get", "name"]],
+                        6
+                    ],
+                    [
+                        "ppi-scale",
+                        [
+                            "*",
+                            ["*", ["ref", "roadLookupIconSizeWidth"], 1.75],
+                            ["ref", "RoadShield.FontStyle.SizeFactor"]
+                        ],
+                        ["ref", "ScalePpi.labels"]
+                    ],
+                    [
+                        ">=",
+                        ["length", ["get", "name"]],
+                        7
+                    ],
+                    [
+                        "ppi-scale",
+                        [
+                            "*",
+                            ["*", ["ref", "roadLookupIconSizeWidth"], 2],
+                            ["ref", "RoadShield.FontStyle.SizeFactor"]
+                        ],
+                        ["ref", "ScalePpi.labels"]
+                    ],
+                    [
+                        "ppi-scale",
+                        ["*", ["ref", "roadLookupIconSizeWidth"], ["ref", "RoadShield.FontStyle.SizeFactor"]],
+                        ["ref", "ScalePpi.labels"]
+                    ]
+                ],
+                "icon-height": [
+                    "ppi-scale",
+                    ["*", ["ref", "roadLookupIconSizeHeight"], ["ref", "RoadShield.FontStyle.SizeFactor"]],
+                    ["ref", "ScalePpi.labels"]
+                ]
+            },
+            "description": "Road Shields"
+        }
+    ]
+}
