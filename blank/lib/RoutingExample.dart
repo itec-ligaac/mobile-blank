@@ -39,18 +39,18 @@ class RoutingExample {
     _showDialog = showDialogCallback;
     _hereMapController = hereMapController;
 
-    double distanceToEarthInMeters = 300;
+    double distanceToEarthInMeters = 10000;
     _hereMapController.camera.lookAtPointWithDistance(
         GeoCoordinates(46.16282272338867,21.29153823852539), distanceToEarthInMeters);
 
     _routingEngine = new RoutingEngine();
   }
 
-  Future<void> addRoute() async {
-    var startGeoCoordinates = _createRandomGeoCoordinatesInViewport();
-    var destinationGeoCoordinates = _createRandomGeoCoordinatesInViewport();
-    var startWaypoint = Waypoint.withDefaults(startGeoCoordinates);
-    var destinationWaypoint = Waypoint.withDefaults(destinationGeoCoordinates);
+  Future<void> addRoute(GeoCoordinates start,GeoCoordinates target) async {
+    // var startGeoCoordinates = start;
+    // var destinationGeoCoordinates = _createRandomGeoCoordinatesInViewport();
+    var startWaypoint = Waypoint.withDefaults(start);
+    var destinationWaypoint = Waypoint.withDefaults(target);
 
     List<Waypoint> waypoints = [startWaypoint, destinationWaypoint];
 
@@ -128,7 +128,7 @@ class RoutingExample {
     GeoBox geoBox = _hereMapController.camera.boundingBox;
     if (geoBox == null) {
       // Happens only when map is not fully covering the viewport.
-      return GeoCoordinates(52.530932, 13.384915);
+      return GeoCoordinates(46.16282272338867,21.29153823852539);
     }
 
     GeoCoordinates northEast = geoBox.northEastCorner;

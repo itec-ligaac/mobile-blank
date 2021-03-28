@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import '../ProgressHUD.dart';
 
+import 'RegisterPage.dart';
+import 'HomePage.dart';
+
 class LoginPage extends StatefulWidget {
   @override
   _LoginPageState createState() => _LoginPageState();
@@ -12,17 +15,16 @@ class _LoginPageState extends State<LoginPage> {
   bool hidePassword = true;
   bool isApiCallProcess = false;
   GlobalKey<FormState> globalFormKey = GlobalKey<FormState>();
-
-  TextEditingController name = new TextEditingController();
   TextEditingController email = new TextEditingController();
   TextEditingController password = new TextEditingController();
 
+  int response_code;
   Future<List> senddata() async {
-    final response =
-        await http.post("https://tiara2.mt2.ro/insertdata.php", body: {
-      "name": "test1",
+    final response = await http.post("https://tiara2.mt2.ro/login.php", body: {
       "email": email.text,
       "password": password.text,
+    }).then((http.Response response) {
+      response_code = response.statusCode;
     });
   }
 
@@ -143,12 +145,21 @@ class _LoginPageState extends State<LoginPage> {
                         FlatButton(
                           padding: EdgeInsets.symmetric(
                               vertical: 12, horizontal: 80),
-                          onPressed: () {
-                            senddata();
-                            final snackBar = SnackBar(
-                                        content: Text("Login Successful"));
-                                    scaffoldKey.currentState
-                                        .showSnackBar(snackBar);
+                          onPressed: () async {
+                            await senddata();
+                            if (response_code == 200) {
+                              final snackBar =
+                                  SnackBar(content: Text("Login Successful"));
+                              scaffoldKey.currentState.showSnackBar(snackBar);
+                              Navigator.of(context).pushReplacement(
+                                  MaterialPageRoute(
+                                      builder: (BuildContext context) =>
+                                          Homepage()));
+                            } else {
+                              final snackBar =
+                                  SnackBar(content: Text("Invalid Account"));
+                              scaffoldKey.currentState.showSnackBar(snackBar);
+                            }
                           },
                           child: Text(
                             "Login",
@@ -157,6 +168,7 @@ class _LoginPageState extends State<LoginPage> {
                           color: Theme.of(context).accentColor,
                           shape: StadiumBorder(),
                         ),
+                        
                         SizedBox(height: 15),
                       ],
                     ),
@@ -169,6 +181,4 @@ class _LoginPageState extends State<LoginPage> {
       ),
     );
   }
-
-  
 }

@@ -19,11 +19,15 @@ class _RegisterPageState extends State<RegisterPage> {
 
   Future<List> senddata() async {
     final response =
-        await http.post("https://tiara2.mt2.ro/insertdata.php", body: {
+        await http.post("https://tiara2.mt2.ro/register.php", body: {
       "name": name.text,
       "email": email.text,
       "password": password.text,
-    });
+    }).then((http.Response response) {
+    print("Response status: ${response.statusCode}");
+    
+
+  });
   }
 
   final scaffoldKey = GlobalKey<ScaffoldState>();

@@ -1,9 +1,17 @@
   
 import 'package:flutter/material.dart';
 
+import 'package:here_sdk/core.dart';
+import 'package:here_sdk/mapview.dart';
+
+
+
 import 'pages/RegisterPage.dart';
+import 'pages/LoginPage.dart';
+import 'pages/Homepage.dart';
 
 void main() {
+  SdkContext.init(IsolateOrigin.main);
   runApp(MyApp());
 }
 
@@ -35,7 +43,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: RegisterPage(),
+      home: LoginPage(),
     );
   }
 }
